@@ -1,5 +1,5 @@
-return = {
-    "ebUFiacJ8QFU",
-    "RQn72G0oRs5m",
-    "rLrVG9LZohTy"
+return {
+    ["ebUFiacJ8QFU"] = true,
+    ["RQn72G0oRs5m"] = true,
+    ["rLrVG9LZohTy"] = true
 }
