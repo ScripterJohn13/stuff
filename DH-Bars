@@ -1,0 +1,5 @@
+game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = "Life"
+game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.647059, 0.058824, 0.058824)
+
+game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = "Dark Energy"
+game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.172549, 0.145098, 0.274510)
