@@ -1,0 +1,11 @@
+local Char = game.Players.LocalPlayer.Character
+local Hum = Char:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+
+while true do
+    wait()
+    for i, v in next, Hum:GetPlayingAnimationTracks() do
+        if v.Animation.AnimationId == "rbxassetid://2788289281" then
+            v:Stop()
+        end
+    end
+end
