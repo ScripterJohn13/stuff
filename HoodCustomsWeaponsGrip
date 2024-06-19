@@ -6,17 +6,17 @@ local revX = getgenv().Settings.RevolverDirs.RevolverDirX
 local revY = getgenv().Settings.RevolverDirs.RevolverDirY
 local revZ = getgenv().Settings.RevolverDirs.RevolverDirZ
 
-local dbX = getgenv().Settings..DoubleBarrelDirs.DoubleBarrelDirX
+local dbX = getgenv().Settings.DoubleBarrelDirs.DoubleBarrelDirX
 local dbY = getgenv().Settings.DoubleBarrelDirs.DoubleBarrelDirY
 local dbZ = getgenv().Settings.DoubleBarrelDirs.DoubleBarrelDirZ
 
-local tacX = getgenv().Settings..TacticalShotgunDirs.TacticalShotgunDirX
+local tacX = getgenv().Settings.TacticalShotgunDirs.TacticalShotgunDirX
 local tacY = getgenv().Settings.TacticalShotgunDirs.TacticalShotgunDirY
 local tacZ = getgenv().Settings.TacticalShotgunDirs.TacticalShotgunDirZ
 
 local rev = game.Players.LocalPlayer.Backpack["[Revolver]"]
-local db = game.Players.LocalPlayer.Backpack["[Double Barrel-SG]"]
-local tac = game.Players.LocalPlayer.Backpack["[Tactical Shotgun]"]
+local db = game.Players.LocalPlayer.Backpack["[DoubleBarrel]"]
+local tac = game.Players.LocalPlayer.Backpack["[TacticalShotgun]"]
 
 if revW == true then
     rev.Grip = CFrame.new(revX,revY,revZ)
