@@ -1,3 +1,30 @@
+--[[
+getgenv().Settings = {
+    Weapons = {
+        Revolver = true,
+        DoubleBarrel = true,
+        TacticalShotgun = true
+
+    },
+    RevolverDirs = {
+        RevolverDirX = 0,
+        RevolverDirY = -15,
+        RevolverDirZ = 0
+    },
+    DoubleBarrelDirs = {
+        DoubleBarrelDirX = 5,
+        DoubleBarrelDirY = -2,
+        DoubleBarrelDirZ = -3
+    },
+    TacticalShotgunDirs = {
+        TacticalShotgunDirX = -3,
+        TacticalShotgunDirY = 2,
+        TacticalShotgunDirZ = 4
+        
+    }
+}
+]]
+
 local revW = getgenv().Settings.Weapons.Revolver
 local dbW = getgenv().Settings.Weapons.DoubleBarrel
 local tacW = getgenv().Settings.Weapons.TacticalShotgun
