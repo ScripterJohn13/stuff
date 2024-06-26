@@ -1,0 +1,889 @@
+local GalaxyGui = Instance.new("ScreenGui")
+local Galaxy = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Logo = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local Sections = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Line = Instance.new("TextLabel")
+local HomeButton = Instance.new("TextButton")
+local Star1 = Instance.new("TextLabel")
+local Star2 = Instance.new("TextLabel")
+local Home = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Welcome = Instance.new("TextLabel")
+local thumbnail = Instance.new("ImageLabel")
+local MainButton = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local stopchargeanim = Instance.new("TextButton")
+local stopblockanim = Instance.new("TextButton")
+local voidkilltool = Instance.new("TextButton")
+local fistreach = Instance.new("TextButton")
+local BarsButton = Instance.new("TextButton")
+local Bars = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local RedEnergy = Instance.new("TextButton")
+local Life = Instance.new("TextButton")
+local DarkEnergy = Instance.new("TextButton")
+local EnergyTitle = Instance.new("TextLabel")
+local HealthTitle = Instance.new("TextLabel")
+local Line1 = Instance.new("TextLabel")
+local Line2 = Instance.new("TextLabel")
+local Line2_2 = Instance.new("TextLabel")
+
+-- Properties
+
+GalaxyGui.Name = "GalaxyGui"
+GalaxyGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GalaxyGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Galaxy.Name = "Galaxy"
+Galaxy.Parent = GalaxyGui
+Galaxy.BackgroundColor3 = Color3.new(0.403922, 0, 0.0117647)
+Galaxy.BorderColor3 = Color3.new(0, 0, 0)
+Galaxy.BorderSizePixel = 0
+Galaxy.Position = UDim2.new(0.0345214494, 0, 0.424661666, 0)
+Galaxy.Size = UDim2.new(0.0574626848, 520, 0.0316416025, 312)
+
+UICorner.Parent = Galaxy
+UICorner.CornerRadius = UDim.new(0.0299999993, 1)
+
+Title.Name = "Title"
+Title.Parent = Galaxy
+Title.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Title.BorderColor3 = Color3.new(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 613, 0, 37)
+Title.Font = Enum.Font.SourceSansSemibold
+Title.LineHeight = 0
+Title.Text = "                Galaxy Gui | v1"
+Title.TextColor3 = Color3.new(0.917647, 0.917647, 0.917647)
+Title.TextSize = 17
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.Parent = Title
+UICorner_2.CornerRadius = UDim.new(0, 4)
+
+Logo.Name = "Logo"
+Logo.Parent = Title
+Logo.BackgroundColor3 = Color3.new(1, 1, 1)
+Logo.BorderColor3 = Color3.new(0, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0136318393, 0, 0.113738187, 0)
+Logo.Size = UDim2.new(0, 31, 0, 27)
+Logo.Image = "rbxassetid://11104447788"
+
+UICorner_3.Parent = Logo
+UICorner_3.CornerRadius = UDim.new(0, 6)
+
+Sections.Name = "Sections"
+Sections.Parent = Galaxy
+Sections.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Sections.BorderColor3 = Color3.new(0, 0, 0)
+Sections.BorderSizePixel = 0
+Sections.Position = UDim2.new(0.0136263156, 0, 0.142327651, 0)
+Sections.Size = UDim2.new(0, 167, 0, 275)
+
+Title_2.Name = "Title"
+Title_2.Parent = Sections
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.BorderColor3 = Color3.new(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Size = UDim2.new(0, 167, 0, 25)
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "Sections"
+Title_2.TextColor3 = Color3.new(1, 1, 1)
+Title_2.TextSize = 18
+
+UICorner_4.Parent = Sections
+
+Line.Name = "Line"
+Line.Parent = Sections
+Line.BackgroundColor3 = Color3.new(1, 1, 1)
+Line.BorderColor3 = Color3.new(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.0909090936, 0)
+Line.Size = UDim2.new(0, 167, 0, 1)
+Line.Font = Enum.Font.SourceSans
+Line.Text = ""
+Line.TextColor3 = Color3.new(0, 0, 0)
+Line.TextSize = 14
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = Sections
+HomeButton.BackgroundColor3 = Color3.new(1, 1, 1)
+HomeButton.BackgroundTransparency = 1
+HomeButton.BorderColor3 = Color3.new(0, 0, 0)
+HomeButton.BorderSizePixel = 0
+HomeButton.Position = UDim2.new(0.377245516, 0, 0.0945454538, 0)
+HomeButton.Size = UDim2.new(0, 40, 0, 24)
+HomeButton.Font = Enum.Font.SourceSansSemibold
+HomeButton.Text = "Home"
+HomeButton.TextColor3 = Color3.new(1, 1, 0)
+HomeButton.TextSize = 16
+
+Star1.Name = "Star1"
+Star1.Parent = Sections
+Star1.BackgroundColor3 = Color3.new(1, 1, 1)
+Star1.BackgroundTransparency = 1
+Star1.BorderColor3 = Color3.new(0, 0, 0)
+Star1.BorderSizePixel = 0
+Star1.Position = UDim2.new(0.227544904, 0, 0.0981818214, 0)
+Star1.Size = UDim2.new(0, 18, 0, 24)
+Star1.Font = Enum.Font.SourceSans
+Star1.Text = "⭐"
+Star1.TextColor3 = Color3.new(0, 0, 0)
+Star1.TextSize = 14
+Star1.TextXAlignment = Enum.TextXAlignment.Left
+
+Star2.Name = "Star2"
+Star2.Parent = Sections
+Star2.BackgroundColor3 = Color3.new(1, 1, 1)
+Star2.BackgroundTransparency = 1
+Star2.BorderColor3 = Color3.new(0, 0, 0)
+Star2.BorderSizePixel = 0
+Star2.Position = UDim2.new(0.664671004, 0, 0.0981818214, 0)
+Star2.Size = UDim2.new(0, 17, 0, 23)
+Star2.Font = Enum.Font.SourceSans
+Star2.Text = "⭐"
+Star2.TextColor3 = Color3.new(0, 0, 0)
+Star2.TextSize = 14
+Star2.TextXAlignment = Enum.TextXAlignment.Right
+
+Home.Name = "Home"
+Home.Parent = Sections
+Home.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Home.BorderColor3 = Color3.new(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
+Home.Size = UDim2.new(0, 410, 0, 275)
+
+UICorner_5.Parent = Home
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Home
+Welcome.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Welcome.BorderColor3 = Color3.new(0, 0, 0)
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.319512188, 0, 0.0472727269, 0)
+Welcome.Size = UDim2.new(0, 124, 0, 26)
+Welcome.Font = Enum.Font.SourceSansSemibold
+Welcome.Text = "Welcome "
+Welcome.TextColor3 = Color3.new(1, 1, 1)
+Welcome.TextSize = 21
+
+thumbnail.Name = "thumbnail"
+thumbnail.Parent = Home
+thumbnail.BackgroundColor3 = Color3.new(1, 1, 1)
+thumbnail.BorderColor3 = Color3.new(0, 0, 0)
+thumbnail.BorderSizePixel = 0
+thumbnail.Position = UDim2.new(0.348780483, 0, 0.185454547, 0)
+thumbnail.Size = UDim2.new(0, 100, 0, 100)
+thumbnail.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+MainButton.Name = "MainButton"
+MainButton.Parent = Sections
+MainButton.BackgroundColor3 = Color3.new(1, 1, 1)
+MainButton.BackgroundTransparency = 1
+MainButton.BorderColor3 = Color3.new(0, 0, 0)
+MainButton.BorderSizePixel = 0
+MainButton.Position = UDim2.new(0.377245516, 0, 0.185454547, 0)
+MainButton.Size = UDim2.new(0, 40, 0, 24)
+MainButton.Font = Enum.Font.SourceSansSemibold
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.new(1, 1, 1)
+MainButton.TextSize = 16
+
+Main.Name = "Main"
+Main.Parent = Sections
+Main.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Main.BorderColor3 = Color3.new(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
+Main.Size = UDim2.new(0, 410, 0, 275)
+Main.Visible = false
+
+UICorner_6.Parent = Main
+
+stopchargeanim.Name = "stopchargeanim"
+stopchargeanim.Parent = Main
+stopchargeanim.BackgroundColor3 = Color3.new(1, 1, 1)
+stopchargeanim.BackgroundTransparency = 1
+stopchargeanim.BorderColor3 = Color3.new(0, 0, 0)
+stopchargeanim.BorderSizePixel = 0
+stopchargeanim.Position = UDim2.new(0.0390243903, 0, 0.0509090908, 0)
+stopchargeanim.Size = UDim2.new(0, 91, 0, 30)
+stopchargeanim.Font = Enum.Font.SourceSansSemibold
+stopchargeanim.Text = "Invisible Charge"
+stopchargeanim.TextColor3 = Color3.new(1, 1, 1)
+stopchargeanim.TextSize = 14
+
+stopblockanim.Name = "stopblockanim"
+stopblockanim.Parent = Main
+stopblockanim.BackgroundColor3 = Color3.new(1, 1, 1)
+stopblockanim.BackgroundTransparency = 1
+stopblockanim.BorderColor3 = Color3.new(0, 0, 0)
+stopblockanim.BorderSizePixel = 0
+stopblockanim.Position = UDim2.new(0.300000012, 0, 0.0509090908, 0)
+stopblockanim.Size = UDim2.new(0, 91, 0, 30)
+stopblockanim.Font = Enum.Font.SourceSansSemibold
+stopblockanim.Text = "Invisible Block"
+stopblockanim.TextColor3 = Color3.new(1, 1, 1)
+stopblockanim.TextSize = 14
+
+voidkilltool.Name = "voidkilltool"
+voidkilltool.Parent = Main
+voidkilltool.BackgroundColor3 = Color3.new(1, 1, 1)
+voidkilltool.BackgroundTransparency = 1
+voidkilltool.BorderColor3 = Color3.new(0, 0, 0)
+voidkilltool.BorderSizePixel = 0
+voidkilltool.Position = UDim2.new(0.0390243903, 0, 0.181818187, 0)
+voidkilltool.Size = UDim2.new(0, 91, 0, 30)
+voidkilltool.Font = Enum.Font.SourceSansSemibold
+voidkilltool.Text = "Void Kill Tool"
+voidkilltool.TextColor3 = Color3.new(1, 1, 1)
+voidkilltool.TextSize = 14
+
+fistreach.Name = "fistreach"
+fistreach.Parent = Main
+fistreach.BackgroundColor3 = Color3.new(1, 1, 1)
+fistreach.BackgroundTransparency = 1
+fistreach.BorderColor3 = Color3.new(0, 0, 0)
+fistreach.BorderSizePixel = 0
+fistreach.Position = UDim2.new(0.300000012, 0, 0.185454547, 0)
+fistreach.Size = UDim2.new(0, 91, 0, 30)
+fistreach.Font = Enum.Font.SourceSansSemibold
+fistreach.Text = "Fist Reach"
+fistreach.TextColor3 = Color3.new(1, 1, 1)
+fistreach.TextSize = 14
+
+BarsButton.Name = "BarsButton"
+BarsButton.Parent = Sections
+BarsButton.BackgroundColor3 = Color3.new(1, 1, 1)
+BarsButton.BackgroundTransparency = 1
+BarsButton.BorderColor3 = Color3.new(0, 0, 0)
+BarsButton.BorderSizePixel = 0
+BarsButton.Position = UDim2.new(0.377245516, 0, 0.272727281, 0)
+BarsButton.Size = UDim2.new(0, 40, 0, 24)
+BarsButton.Font = Enum.Font.SourceSansSemibold
+BarsButton.Text = "Bars"
+BarsButton.TextColor3 = Color3.new(1, 1, 1)
+BarsButton.TextSize = 16
+
+Bars.Name = "Bars"
+Bars.Parent = Sections
+Bars.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Bars.BorderColor3 = Color3.new(0, 0, 0)
+Bars.BorderSizePixel = 0
+Bars.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
+Bars.Size = UDim2.new(0, 410, 0, 275)
+Bars.Visible = false
+
+UICorner_7.Parent = Bars
+
+RedEnergy.Name = "RedEnergy"
+RedEnergy.Parent = Bars
+RedEnergy.BackgroundColor3 = Color3.new(1, 1, 1)
+RedEnergy.BackgroundTransparency = 1
+RedEnergy.BorderColor3 = Color3.new(0, 0, 0)
+RedEnergy.BorderSizePixel = 0
+RedEnergy.Position = UDim2.new(0.0265854262, 0, 0.149727225, 0)
+RedEnergy.Size = UDim2.new(0, 91, 0, 30)
+RedEnergy.Font = Enum.Font.SourceSansSemibold
+RedEnergy.Text = "Red Energy"
+RedEnergy.TextColor3 = Color3.new(1, 1, 1)
+RedEnergy.TextSize = 14
+
+Life.Name = "Life"
+Life.Parent = Bars
+Life.BackgroundColor3 = Color3.new(1, 1, 1)
+Life.BackgroundTransparency = 1
+Life.BorderColor3 = Color3.new(0, 0, 0)
+Life.BorderSizePixel = 0
+Life.Position = UDim2.new(0.248536646, 0, 0.149727225, 0)
+Life.Size = UDim2.new(0, 91, 0, 30)
+Life.Font = Enum.Font.SourceSansSemibold
+Life.Text = "Red Life"
+Life.TextColor3 = Color3.new(1, 1, 1)
+Life.TextSize = 14
+
+DarkEnergy.Name = "DarkEnergy"
+DarkEnergy.Parent = Bars
+DarkEnergy.BackgroundColor3 = Color3.new(1, 1, 1)
+DarkEnergy.BackgroundTransparency = 1
+DarkEnergy.BorderColor3 = Color3.new(0, 0, 0)
+DarkEnergy.BorderSizePixel = 0
+DarkEnergy.Position = UDim2.new(0.0265854262, 0, 0.27336359, 0)
+DarkEnergy.Size = UDim2.new(0, 91, 0, 30)
+DarkEnergy.Font = Enum.Font.SourceSansSemibold
+DarkEnergy.Text = "Dark Energy"
+DarkEnergy.TextColor3 = Color3.new(1, 1, 1)
+DarkEnergy.TextSize = 14
+
+EnergyTitle.Name = "EnergyTitle"
+EnergyTitle.Parent = Bars
+EnergyTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+EnergyTitle.BackgroundTransparency = 1
+EnergyTitle.BorderColor3 = Color3.new(0, 0, 0)
+EnergyTitle.BorderSizePixel = 0
+EnergyTitle.Position = UDim2.new(0.0265854262, 0, 0.043636363, 0)
+EnergyTitle.Size = UDim2.new(0, 85, 0, 28)
+EnergyTitle.Font = Enum.Font.SourceSansBold
+EnergyTitle.Text = "Energy Bar"
+EnergyTitle.TextColor3 = Color3.new(1, 1, 1)
+EnergyTitle.TextSize = 14
+
+HealthTitle.Name = "HealthTitle"
+HealthTitle.Parent = Bars
+HealthTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+HealthTitle.BackgroundTransparency = 1
+HealthTitle.BorderColor3 = Color3.new(0, 0, 0)
+HealthTitle.BorderSizePixel = 0
+HealthTitle.Position = UDim2.new(0.255853713, 0, 0.0363636352, 0)
+HealthTitle.Size = UDim2.new(0, 85, 0, 28)
+HealthTitle.Font = Enum.Font.SourceSansBold
+HealthTitle.Text = "Health Bar"
+HealthTitle.TextColor3 = Color3.new(1, 1, 1)
+HealthTitle.TextSize = 14
+
+Line1.Name = "Line1"
+Line1.Parent = Bars
+Line1.BackgroundColor3 = Color3.new(1, 1, 1)
+Line1.BorderColor3 = Color3.new(0, 0, 0)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0.00169707509, 0, 0.13454546, 0)
+Line1.Size = UDim2.new(0, 409, 0, 1)
+Line1.Font = Enum.Font.SourceSans
+Line1.Text = ""
+Line1.TextColor3 = Color3.new(0, 0, 0)
+Line1.TextSize = 14
+
+Line2.Name = "Line2"
+Line2.Parent = Bars
+Line2.BackgroundColor3 = Color3.new(1, 1, 1)
+Line2.BorderColor3 = Color3.new(0, 0, 0)
+Line2.BorderSizePixel = 0
+Line2.Position = UDim2.new(0.25341469, 0, 0.00312677561, 0)
+Line2.Size = UDim2.new(0, 1, 0, 274)
+Line2.Font = Enum.Font.SourceSans
+Line2.Text = ""
+Line2.TextColor3 = Color3.new(0, 0, 0)
+Line2.TextSize = 14
+
+Line2_2.Name = "Line2"
+Line2_2.Parent = Bars
+Line2_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Line2_2.BorderColor3 = Color3.new(0, 0, 0)
+Line2_2.BorderSizePixel = 0
+Line2_2.Position = UDim2.new(0.460731775, 0, 0.00312677561, 0)
+Line2_2.Size = UDim2.new(0, 1, 0, 274)
+Line2_2.Font = Enum.Font.SourceSans
+Line2_2.Text = ""
+Line2_2.TextColor3 = Color3.new(0, 0, 0)
+Line2_2.TextSize = 14
+
+-- Scripts
+
+local function CKQX_fake_script() -- Galaxy.Drag 
+	local script = Instance.new('LocalScript', Galaxy)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.50
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(CKQX_fake_script)()
+local function HYJTOUS_fake_script() -- Galaxy.Toggle 
+	local script = Instance.new('LocalScript', Galaxy)
+
+	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(Key)
+		if Key == "v" then
+			game.CoreGui.GalaxyGui.Galaxy.Visible = not game.StarterGui.GalaxyGui.Galaxy.Visible
+		end
+	end)
+	
+end
+coroutine.wrap(HYJTOUS_fake_script)()
+local function TVZXQAU_fake_script() -- HomeButton.Frame 
+	local script = Instance.new('LocalScript', HomeButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
+		game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
+		if game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible == false then
+			game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = true
+		else
+			game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
+		end
+	end)
+end
+coroutine.wrap(TVZXQAU_fake_script)()
+local function CGQOSZA_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local textLabel = script.Parent
+	
+	textLabel.Text = "Welcome " .. player.Name
+end
+coroutine.wrap(CGQOSZA_fake_script)()
+local function SIUU_fake_script() -- thumbnail.Thumbnail 
+	local script = Instance.new('LocalScript', thumbnail)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local thumbnail = script.Parent
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	if isReady then
+		thumbnail.Image = content
+	end
+end
+coroutine.wrap(SIUU_fake_script)()
+local function YSGOIIC_fake_script() -- MainButton.Frame 
+	local script = Instance.new('LocalScript', MainButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
+		game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
+		if game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible == false then
+			game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = true
+		else
+			game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
+		end
+	end)
+end
+coroutine.wrap(YSGOIIC_fake_script)()
+local function IALEL_fake_script() -- stopchargeanim.stopcharge 
+	local script = Instance.new('LocalScript', stopchargeanim)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Char = game.Players.LocalPlayer.Character
+		local Hum = Char:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+	
+		while true do
+			wait()
+			for i, v in next, Hum:GetPlayingAnimationTracks() do
+				if v.Animation.AnimationId == "rbxassetid://2788289281" then
+					v:Stop()
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(IALEL_fake_script)()
+local function NDUEKUB_fake_script() -- stopblockanim.stopblock 
+	local script = Instance.new('LocalScript', stopblockanim)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Char = game.Players.LocalPlayer.Character
+		local Hum = Char:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+	
+		while true do
+			wait()
+			for i, v in next, Hum:GetPlayingAnimationTracks() do
+				if v.Animation.AnimationId == "rbxassetid://2788354405" then
+					v:Stop()
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(NDUEKUB_fake_script)()
+local function BVFHZN_fake_script() -- voidkilltool.tool 
+	local script = Instance.new('LocalScript', voidkilltool)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ToolClone;
+		local Tool = Instance.new("Tool", game.Players.LocalPlayer.Backpack)
+		Tool.RequiresHandle = false
+		Tool.CanBeDropped = false
+		Tool.Name = "Kill [Stand on them]"
+	
+		Tool.Activated:Connect(function()
+			local returnPos = game.Players.LocalPlayer.Character.UpperTorso.CFrame
+			wait(0.3)
+			game.ReplicatedStorage.MainEvent:FireServer("Grabbing", true)
+			wait(0.2)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,100000,0)
+			wait(0.3)
+			game.ReplicatedStorage.MainEvent:FireServer("Grabbing", true)
+			wait(1)
+			game.Players.LocalPlayer.Character.UpperTorso.CFrame = returnPos
+		end)
+	
+		game.Players.LocalPlayer.CharacterAdded:Connect(function()
+			if not game.Players.LocalPlayer.Backpack:FindFirstChild('Kill [Stand on them]') then
+				ToolClone = Tool:Clone()
+				ToolClone.Parent = game.Players.LocalPlayer.Backpack
+				ToolClone.Activated:Connect(function()
+					local returnPos = game.Players.LocalPlayer.Character.UpperTorso.CFrame
+					wait(0.3)
+					game.ReplicatedStorage.MainEvent:FireServer("Grabbing", true)
+					wait(0.2)
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,100000,0)
+					wait(0.3)
+					game.ReplicatedStorage.MainEvent:FireServer("Grabbing", true)
+					wait(1)
+					game.Players.LocalPlayer.Character.UpperTorso.CFrame = returnPos
+				end)
+			end
+		end)
+	end)
+end
+coroutine.wrap(BVFHZN_fake_script)()
+local function OICD_fake_script() -- fistreach.reach 
+	local script = Instance.new('LocalScript', fistreach)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Info";
+			Text = "Use the second Combat Tool that gets added to your Inventory.";
+			Duration = "5";
+		})
+		
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+		local ToolClone;
+		local Size = 30
+		local LeftHand_Save = LocalPlayer.Character.LeftHand.Size
+		local RightHand_Save = LocalPlayer.Character.RightHand.Size
+	
+		local ANIM_TRACK = Instance.new("Animation")
+		ANIM_TRACK.AnimationId = "rbxassetid://2788290941"
+		local FakePunch = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(ANIM_TRACK)
+		FakePunch.Priority = Enum.AnimationPriority.Action
+	
+		-- Remove seats
+		for i, v in pairs(game.workspace.MAP:GetDescendants()) do 
+			if v.ClassName == "Seat" and v.Disabled ~= true then 
+				v.Disabled = true
+			end
+		end
+	
+	
+		function FireRemote(NAME, STATE)
+			game:GetService("ReplicatedStorage"):WaitForChild("MainEvent"):FireServer(NAME, STATE)
+		end
+	
+		function RemoveMovement()
+			for i = 1,15 do
+				for i, v in pairs(LocalPlayer.Character:WaitForChild("BodyEffects"):FindFirstChild("Movement"):GetChildren()) do
+					v:Destroy()
+				end
+				task.wait()
+			end
+		end
+	
+		function RefreshAnimations()
+			LocalPlayer.Character.Animate.Disabled = true
+			for _, v in ipairs(LocalPlayer.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do
+				v:Stop()
+			end
+			LocalPlayer.Character.Animate.Disabled = false
+			task.wait()
+		end
+	
+		function MouseIcon(STATE)
+			if STATE then
+				game:GetService("UserInputService").MouseIconEnabled = true
+			else
+				LocalPlayer.PlayerGui.MainScreenGui.AmmoFrame.Visible = false
+				game:GetService("UserInputService").MouseIconEnabled = false
+				LocalPlayer.PlayerGui.MainScreenGui.Aim.Bottom.BackgroundTransparency = 1
+				LocalPlayer.PlayerGui.MainScreenGui.Aim.Left.BackgroundTransparency = 1
+				LocalPlayer.PlayerGui.MainScreenGui.Aim.Right.BackgroundTransparency = 1
+				LocalPlayer.PlayerGui.MainScreenGui.Aim.Top.BackgroundTransparency = 1
+				LocalPlayer.PlayerGui.MainScreenGui.Aim.CursorImage.ImageTransparency = 1
+				LocalPlayer.PlayerGui.MainScreenGui.Aim.BackgroundTransparency = 1
+			end
+		end
+	
+		function HandReach(STATE)
+			if STATE then
+				LocalPlayer.Character.RightHand.Size = Vector3.new(Size, Size, Size)
+				LocalPlayer.Character.LeftHand.Size = Vector3.new(Size, Size, Size)
+				LocalPlayer.Character.RightHand.Transparency = 1
+				LocalPlayer.Character.LeftHand.Transparency = 1
+				LocalPlayer.Character.RightHand.Massless = true
+				LocalPlayer.Character.LeftHand.Massless = true
+			else
+				LocalPlayer.Character.RightHand.Size = Vector3.new(RightHand_Save)
+				LocalPlayer.Character.LeftHand.Size = Vector3.new(LeftHand_Save)
+				LocalPlayer.Character.RightHand.Transparency = 0
+				LocalPlayer.Character.LeftHand.Transparency = 0
+				LocalPlayer.Character.RightHand.Massless = false
+				LocalPlayer.Character.LeftHand.Massless = false
+			end
+		end
+	
+		function BuyTool()
+			warn("NO GUN FOUND BUYING GUN")
+			local GlockSpot = workspace.Ignored.Shop:FindFirstChild('[Glock] - $318')
+			repeat
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GlockSpot:GetPivot() * CFrame.new(0,-5,0)
+				fireclickdetector(GlockSpot.ClickDetector)
+				game:GetService('RunService').Stepped:Wait()
+			until game.Players.LocalPlayer.Backpack:FindFirstChild('[Glock]')
+		end
+	
+		BuyTool()
+	
+		if LocalPlayer.Character:FindFirstChild("Reach") then LocalPlayer.Character:FindFirstChild("Reach"):Destroy() end
+		if LocalPlayer.Backpack:FindFirstChild("Reach") then LocalPlayer.Backpack:FindFirstChild("Reach"):Destroy() end
+		local Tool = Instance.new("Tool", LocalPlayer.Backpack)
+		Tool.Name = "Reach"
+		Tool.CanBeDropped = false
+		Tool.RequiresHandle = false
+		Tool.TextureId = "rbxassetid://854037206" --16274800774
+		game.Players.LocalPlayer.CharacterAdded:Connect(function()
+			if not game.Players.LocalPlayer.Backpack:FindFirstChild('Reach') then
+				wait(1)
+				ToolClone = Tool:Clone()
+				ToolClone.Parent = game.Players.LocalPlayer.Backpack
+	
+				local Attacking = false
+				local RemovingValues = false
+				ToolClone.Activated:Connect(function()
+					if not Attacking then
+						Attacking = true
+						local q=0
+						for i, v in pairs(LocalPlayer.Backpack:GetChildren()) do
+							if v:IsA("Tool") and q==0 then
+								if v:FindFirstChild("Ammo") then
+									q=q+1
+	
+									local Tool = v
+									local Humanoid = LocalPlayer.Character:WaitForChild("Humanoid")
+	
+									Humanoid:UnequipTools();
+	
+									if Tool then
+										MouseIcon(false);
+										for i = 1,20 do
+											FireRemote("GunCombatToggle", true);
+										end
+							--[[repeat task.wait()
+								FireRemote("GunCombatToggle", true);
+							until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("MousePos"):FindFirstChild("HandAttk").Value == true]]
+	
+										Humanoid:EquipTool(Tool);
+										Tool:Activate();
+										RemoveMovement();
+	
+										--repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == true
+										Humanoid:UnequipTools();
+										MouseIcon(true);
+	
+										FakePunch:Play(.5);
+										FakePunch:AdjustSpeed(0);
+										FakePunch.TimePosition = 0.4
+	
+										LocalPlayer.Character:WaitForChild("Highlight");
+	
+										LocalPlayer.Character:WaitForChild("Humanoid"):EquipTool(Tool);
+	
+										HandReach(true);
+										MouseIcon(false);
+										Tool:Activate();
+										task.wait()
+										Tool:Deactivate();
+										LocalPlayer:GetMouse()
+										Humanoid:UnequipTools();
+										MouseIcon(true);
+										RemoveMovement();
+	
+										FakePunch:AdjustSpeed(1.5);
+	
+										for i = 1,15 do
+											for i, v in pairs(Humanoid:GetPlayingAnimationTracks()) do
+												if v.Animation.AnimationId:match("rbxassetid://2791876661") then
+													v:Stop();
+												end
+											end
+											task.wait()
+										end
+	
+										repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == false
+	
+										HandReach(false);
+									end
+	
+									Attacking = false
+								end
+							end
+						end
+						if q == 0 then
+							BuyTool();
+						end
+					end
+				end)
+			end
+		end)
+	
+		local Attacking = false
+		local RemovingValues = false
+		Tool.Activated:Connect(function()
+			if not Attacking then
+				Attacking = true
+				local q=0
+				for i, v in pairs(LocalPlayer.Backpack:GetChildren()) do
+					if v:IsA("Tool") and q==0 then
+						if v:FindFirstChild("Ammo") then
+							q=q+1
+	
+							local Tool = v
+							local Humanoid = LocalPlayer.Character:WaitForChild("Humanoid")
+	
+							Humanoid:UnequipTools();
+	
+							if Tool then
+								MouseIcon(false);
+								for i = 1,20 do
+									FireRemote("GunCombatToggle", true);
+								end
+							--[[repeat task.wait()
+								FireRemote("GunCombatToggle", true);
+							until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("MousePos"):FindFirstChild("HandAttk").Value == true]]
+	
+								Humanoid:EquipTool(Tool);
+								Tool:Activate();
+								RemoveMovement();
+	
+								--repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == true
+								Humanoid:UnequipTools();
+								MouseIcon(true);
+	
+								FakePunch:Play(.5);
+								FakePunch:AdjustSpeed(0);
+								FakePunch.TimePosition = 0.4
+	
+								LocalPlayer.Character:WaitForChild("Highlight");
+	
+								LocalPlayer.Character:WaitForChild("Humanoid"):EquipTool(Tool);
+	
+								HandReach(true);
+								MouseIcon(false);
+								Tool:Activate();
+								task.wait()
+								Tool:Deactivate();
+								LocalPlayer:GetMouse()
+								Humanoid:UnequipTools();
+								MouseIcon(true);
+								RemoveMovement();
+	
+								FakePunch:AdjustSpeed(1.5);
+	
+								for i = 1,15 do
+									for i, v in pairs(Humanoid:GetPlayingAnimationTracks()) do
+										if v.Animation.AnimationId:match("rbxassetid://2791876661") then
+											v:Stop();
+										end
+									end
+									task.wait()
+								end
+	
+								repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == false
+	
+								HandReach(false);
+							end
+	
+							Attacking = false
+						end
+					end
+				end
+				if q == 0 then
+					BuyTool();
+				end
+			end
+		end)
+		
+	end)
+end
+coroutine.wrap(OICD_fake_script)()
+local function FYYDO_fake_script() -- BarsButton.LocalScript 
+	local script = Instance.new('LocalScript', BarsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
+		game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
+		if game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible == false then
+			game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = true
+		else
+			game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
+		end
+	end)
+end
+coroutine.wrap(FYYDO_fake_script)()
+local function YSRCJ_fake_script() -- RedEnergy.RedEnergyBar 
+	local script = Instance.new('LocalScript', RedEnergy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = "Energy"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.52549, 0, 0.00784314)
+	end)
+end
+coroutine.wrap(YSRCJ_fake_script)()
+local function HMBE_fake_script() -- Life.LifeBar 
+	local script = Instance.new('LocalScript', Life)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = "Life"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.694118, 0.0627451, 0.0627451)
+	end)
+end
+coroutine.wrap(HMBE_fake_script)()
+local function OSNH_fake_script() -- DarkEnergy.DarkEnergyBar 
+	local script = Instance.new('LocalScript', DarkEnergy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = "Dark Energy"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.172549, 0.145098, 0.274510)
+	end)
+end
+coroutine.wrap(OSNH_fake_script)()
+local function YPBUHO_fake_script() -- GalaxyGui.CoreGui 
+	local script = Instance.new('LocalScript', GalaxyGui)
+
+	game.StarterGui.GalaxyGui.Parent = game.CoreGui
+end
+coroutine.wrap(YPBUHO_fake_script)()
