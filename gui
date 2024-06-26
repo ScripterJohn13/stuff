@@ -162,6 +162,7 @@ Home.BorderColor3 = Color3.new(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
 Home.Size = UDim2.new(0, 410, 0, 275)
+Home.Visible = false
 
 UICorner_5.Parent = Home
 
@@ -206,7 +207,6 @@ Main.BorderColor3 = Color3.new(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
 Main.Size = UDim2.new(0, 410, 0, 275)
-Main.Visible = false
 
 UICorner_6.Parent = Main
 
@@ -389,7 +389,7 @@ Line2_2.TextSize = 14
 
 -- Scripts
 
-local function CKQX_fake_script() -- Galaxy.Drag 
+local function TKHKMPH_fake_script() -- Galaxy.Drag 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local UIS = game:GetService('UserInputService')
@@ -427,8 +427,8 @@ local function CKQX_fake_script() -- Galaxy.Drag
 		end
 	end)
 end
-coroutine.wrap(CKQX_fake_script)()
-local function HYJTOUS_fake_script() -- Galaxy.Toggle 
+coroutine.wrap(TKHKMPH_fake_script)()
+local function NWOJJ_fake_script() -- Galaxy.Toggle 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(Key)
@@ -438,22 +438,22 @@ local function HYJTOUS_fake_script() -- Galaxy.Toggle
 	end)
 	
 end
-coroutine.wrap(HYJTOUS_fake_script)()
-local function TVZXQAU_fake_script() -- HomeButton.Frame 
+coroutine.wrap(NWOJJ_fake_script)()
+local function MLLCWT_fake_script() -- HomeButton.Frame 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
-		game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
-		if game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible == false then
-			game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = true
+		game.StarterGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
+		game.StarterGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
+		if game.StarterGui.GalaxyGui.Galaxy.Sections.Home.Visible == false then
+			game.StarterGui.GalaxyGui.Galaxy.Sections.Home.Visible = true
 		else
-			game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
+			game.StarterGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
 		end
 	end)
 end
-coroutine.wrap(TVZXQAU_fake_script)()
-local function CGQOSZA_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(MLLCWT_fake_script)()
+local function RKUIDH_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	local Players = game:GetService("Players")
@@ -462,8 +462,8 @@ local function CGQOSZA_fake_script() -- Welcome.LocalScript
 	
 	textLabel.Text = "Welcome " .. player.Name
 end
-coroutine.wrap(CGQOSZA_fake_script)()
-local function SIUU_fake_script() -- thumbnail.Thumbnail 
+coroutine.wrap(RKUIDH_fake_script)()
+local function HMDWAA_fake_script() -- thumbnail.Thumbnail 
 	local script = Instance.new('LocalScript', thumbnail)
 
 	local Players = game:GetService("Players")
@@ -479,22 +479,22 @@ local function SIUU_fake_script() -- thumbnail.Thumbnail
 		thumbnail.Image = content
 	end
 end
-coroutine.wrap(SIUU_fake_script)()
-local function YSGOIIC_fake_script() -- MainButton.Frame 
+coroutine.wrap(HMDWAA_fake_script)()
+local function FSFZ_fake_script() -- MainButton.Frame 
 	local script = Instance.new('LocalScript', MainButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
-		game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
-		if game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible == false then
-			game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = true
+		game.StarterGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
+		game.StarterGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
+		if game.StarterGui.GalaxyGui.Galaxy.Sections.Main.Visible == false then
+			game.StarterGui.GalaxyGui.Galaxy.Sections.Main.Visible = true
 		else
-			game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
+			game.StarterGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
 		end
 	end)
 end
-coroutine.wrap(YSGOIIC_fake_script)()
-local function IALEL_fake_script() -- stopchargeanim.stopcharge 
+coroutine.wrap(FSFZ_fake_script)()
+local function MPUK_fake_script() -- stopchargeanim.stopcharge 
 	local script = Instance.new('LocalScript', stopchargeanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -511,8 +511,8 @@ local function IALEL_fake_script() -- stopchargeanim.stopcharge
 		end
 	end)
 end
-coroutine.wrap(IALEL_fake_script)()
-local function NDUEKUB_fake_script() -- stopblockanim.stopblock 
+coroutine.wrap(MPUK_fake_script)()
+local function MXSHBCY_fake_script() -- stopblockanim.stopblock 
 	local script = Instance.new('LocalScript', stopblockanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -529,8 +529,8 @@ local function NDUEKUB_fake_script() -- stopblockanim.stopblock
 		end
 	end)
 end
-coroutine.wrap(NDUEKUB_fake_script)()
-local function BVFHZN_fake_script() -- voidkilltool.tool 
+coroutine.wrap(MXSHBCY_fake_script)()
+local function XUPR_fake_script() -- voidkilltool.tool 
 	local script = Instance.new('LocalScript', voidkilltool)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -571,8 +571,8 @@ local function BVFHZN_fake_script() -- voidkilltool.tool
 		end)
 	end)
 end
-coroutine.wrap(BVFHZN_fake_script)()
-local function OICD_fake_script() -- fistreach.reach 
+coroutine.wrap(XUPR_fake_script)()
+local function ADAVL_fake_script() -- fistreach.reach 
 	local script = Instance.new('LocalScript', fistreach)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -839,22 +839,22 @@ local function OICD_fake_script() -- fistreach.reach
 		
 	end)
 end
-coroutine.wrap(OICD_fake_script)()
-local function FYYDO_fake_script() -- BarsButton.LocalScript 
+coroutine.wrap(ADAVL_fake_script)()
+local function XQIY_fake_script() -- BarsButton.LocalScript 
 	local script = Instance.new('LocalScript', BarsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.CoreGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
-		game.CoreGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
-		if game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible == false then
-			game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = true
+		game.StarterGui.GalaxyGui.Galaxy.Sections.Home.Visible = false
+		game.StarterGui.GalaxyGui.Galaxy.Sections.Main.Visible = false
+		if game.StarterGui.GalaxyGui.Galaxy.Sections.Bars.Visible == false then
+			game.StarterGui.GalaxyGui.Galaxy.Sections.Bars.Visible = true
 		else
-			game.CoreGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
+			game.StarterGui.GalaxyGui.Galaxy.Sections.Bars.Visible = false
 		end
 	end)
 end
-coroutine.wrap(FYYDO_fake_script)()
-local function YSRCJ_fake_script() -- RedEnergy.RedEnergyBar 
+coroutine.wrap(XQIY_fake_script)()
+local function NRPLV_fake_script() -- RedEnergy.RedEnergyBar 
 	local script = Instance.new('LocalScript', RedEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -862,8 +862,8 @@ local function YSRCJ_fake_script() -- RedEnergy.RedEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.52549, 0, 0.00784314)
 	end)
 end
-coroutine.wrap(YSRCJ_fake_script)()
-local function HMBE_fake_script() -- Life.LifeBar 
+coroutine.wrap(NRPLV_fake_script)()
+local function PJXRNB_fake_script() -- Life.LifeBar 
 	local script = Instance.new('LocalScript', Life)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -871,8 +871,8 @@ local function HMBE_fake_script() -- Life.LifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.694118, 0.0627451, 0.0627451)
 	end)
 end
-coroutine.wrap(HMBE_fake_script)()
-local function OSNH_fake_script() -- DarkEnergy.DarkEnergyBar 
+coroutine.wrap(PJXRNB_fake_script)()
+local function GCGKF_fake_script() -- DarkEnergy.DarkEnergyBar 
 	local script = Instance.new('LocalScript', DarkEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -880,10 +880,4 @@ local function OSNH_fake_script() -- DarkEnergy.DarkEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.172549, 0.145098, 0.274510)
 	end)
 end
-coroutine.wrap(OSNH_fake_script)()
-local function YPBUHO_fake_script() -- GalaxyGui.CoreGui 
-	local script = Instance.new('LocalScript', GalaxyGui)
-
-	game.StarterGui.GalaxyGui.Parent = game.CoreGui
-end
-coroutine.wrap(YPBUHO_fake_script)()
+coroutine.wrap(GCGKF_fake_script)()
