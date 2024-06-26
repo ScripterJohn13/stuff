@@ -25,17 +25,29 @@ local stopchargeanim = Instance.new("TextButton")
 local stopblockanim = Instance.new("TextButton")
 local voidkilltool = Instance.new("TextButton")
 local fistreach = Instance.new("TextButton")
+local rolltp = Instance.new("TextButton")
 local BarsButton = Instance.new("TextButton")
 local Bars = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local RedEnergy = Instance.new("TextButton")
-local Life = Instance.new("TextButton")
+local RedLife = Instance.new("TextButton")
 local DarkEnergy = Instance.new("TextButton")
 local EnergyTitle = Instance.new("TextLabel")
 local HealthTitle = Instance.new("TextLabel")
 local Line1 = Instance.new("TextLabel")
 local Line2 = Instance.new("TextLabel")
-local Line2_2 = Instance.new("TextLabel")
+local Line3 = Instance.new("TextLabel")
+local PurpleEnergy = Instance.new("TextButton")
+local GreenLife = Instance.new("TextButton")
+local DarkLife = Instance.new("TextButton")
+local GreenEnergy = Instance.new("TextButton")
+local PurpleLife = Instance.new("TextButton")
+local ArmorTitle = Instance.new("TextLabel")
+local Line4 = Instance.new("TextLabel")
+local DarkArmor = Instance.new("TextButton")
+local RedArmor = Instance.new("TextButton")
+local PurpleArmor = Instance.new("TextButton")
+local GreenArmor = Instance.new("TextButton")
 
 GalaxyGui.Name = "GalaxyGui"
 GalaxyGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -58,7 +70,8 @@ Title.Parent = Galaxy
 Title.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
 Title.BorderColor3 = Color3.new(0, 0, 0)
 Title.BorderSizePixel = 0
-Title.Size = UDim2.new(0, 614, 0, 37)
+Title.Position = UDim2.new(-5.09808267e-08, 0, 0, 0)
+Title.Size = UDim2.new(0, 630, 0, 37)
 Title.Font = Enum.Font.SourceSansSemibold
 Title.LineHeight = 0
 Title.Text = "                Galaxy Gui | v1"
@@ -230,7 +243,7 @@ stopblockanim.BackgroundColor3 = Color3.new(1, 1, 1)
 stopblockanim.BackgroundTransparency = 1
 stopblockanim.BorderColor3 = Color3.new(0, 0, 0)
 stopblockanim.BorderSizePixel = 0
-stopblockanim.Position = UDim2.new(0.300000012, 0, 0.0509090908, 0)
+stopblockanim.Position = UDim2.new(0.260975599, 0, 0.0509090908, 0)
 stopblockanim.Size = UDim2.new(0, 91, 0, 30)
 stopblockanim.Font = Enum.Font.SourceSansSemibold
 stopblockanim.Text = "Invisible Block"
@@ -243,7 +256,7 @@ voidkilltool.BackgroundColor3 = Color3.new(1, 1, 1)
 voidkilltool.BackgroundTransparency = 1
 voidkilltool.BorderColor3 = Color3.new(0, 0, 0)
 voidkilltool.BorderSizePixel = 0
-voidkilltool.Position = UDim2.new(0.0390243903, 0, 0.181818187, 0)
+voidkilltool.Position = UDim2.new(0.0390243903, 0, 0.174545452, 0)
 voidkilltool.Size = UDim2.new(0, 91, 0, 30)
 voidkilltool.Font = Enum.Font.SourceSansSemibold
 voidkilltool.Text = "Void Kill Tool"
@@ -256,12 +269,25 @@ fistreach.BackgroundColor3 = Color3.new(1, 1, 1)
 fistreach.BackgroundTransparency = 1
 fistreach.BorderColor3 = Color3.new(0, 0, 0)
 fistreach.BorderSizePixel = 0
-fistreach.Position = UDim2.new(0.300000012, 0, 0.185454547, 0)
+fistreach.Position = UDim2.new(0.704878032, 0, 0.0509090908, 0)
 fistreach.Size = UDim2.new(0, 91, 0, 30)
 fistreach.Font = Enum.Font.SourceSansSemibold
 fistreach.Text = "Fist Reach"
 fistreach.TextColor3 = Color3.new(1, 1, 1)
 fistreach.TextSize = 14
+
+rolltp.Name = "rolltp"
+rolltp.Parent = Main
+rolltp.BackgroundColor3 = Color3.new(1, 1, 1)
+rolltp.BackgroundTransparency = 1
+rolltp.BorderColor3 = Color3.new(0, 0, 0)
+rolltp.BorderSizePixel = 0
+rolltp.Position = UDim2.new(0.482926816, 0, 0.0509090908, 0)
+rolltp.Size = UDim2.new(0, 91, 0, 30)
+rolltp.Font = Enum.Font.SourceSansSemibold
+rolltp.Text = "Roll TP"
+rolltp.TextColor3 = Color3.new(1, 1, 1)
+rolltp.TextSize = 14
 
 BarsButton.Name = "BarsButton"
 BarsButton.Parent = Sections
@@ -281,7 +307,7 @@ Bars.Parent = Sections
 Bars.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
 Bars.BorderColor3 = Color3.new(0, 0, 0)
 Bars.BorderSizePixel = 0
-Bars.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
+Bars.Position = UDim2.new(1.09000003, 0, -0.00300000003, 0)
 Bars.Size = UDim2.new(0, 410, 0, 275)
 Bars.Visible = false
 
@@ -293,25 +319,25 @@ RedEnergy.BackgroundColor3 = Color3.new(1, 1, 1)
 RedEnergy.BackgroundTransparency = 1
 RedEnergy.BorderColor3 = Color3.new(0, 0, 0)
 RedEnergy.BorderSizePixel = 0
-RedEnergy.Position = UDim2.new(0.0265854262, 0, 0.149727225, 0)
+RedEnergy.Position = UDim2.new(0.0192683525, 0, 0.251545399, 0)
 RedEnergy.Size = UDim2.new(0, 91, 0, 30)
 RedEnergy.Font = Enum.Font.SourceSansSemibold
 RedEnergy.Text = "Red Energy"
 RedEnergy.TextColor3 = Color3.new(1, 1, 1)
 RedEnergy.TextSize = 14
 
-Life.Name = "Life"
-Life.Parent = Bars
-Life.BackgroundColor3 = Color3.new(1, 1, 1)
-Life.BackgroundTransparency = 1
-Life.BorderColor3 = Color3.new(0, 0, 0)
-Life.BorderSizePixel = 0
-Life.Position = UDim2.new(0.248536646, 0, 0.149727225, 0)
-Life.Size = UDim2.new(0, 91, 0, 30)
-Life.Font = Enum.Font.SourceSansSemibold
-Life.Text = "Red Life"
-Life.TextColor3 = Color3.new(1, 1, 1)
-Life.TextSize = 14
+RedLife.Name = "RedLife"
+RedLife.Parent = Bars
+RedLife.BackgroundColor3 = Color3.new(1, 1, 1)
+RedLife.BackgroundTransparency = 1
+RedLife.BorderColor3 = Color3.new(0, 0, 0)
+RedLife.BorderSizePixel = 0
+RedLife.Position = UDim2.new(0.241219565, 0, 0.26245451, 0)
+RedLife.Size = UDim2.new(0, 91, 0, 30)
+RedLife.Font = Enum.Font.SourceSansSemibold
+RedLife.Text = "Red Life"
+RedLife.TextColor3 = Color3.new(1, 1, 1)
+RedLife.TextSize = 14
 
 DarkEnergy.Name = "DarkEnergy"
 DarkEnergy.Parent = Bars
@@ -319,7 +345,7 @@ DarkEnergy.BackgroundColor3 = Color3.new(1, 1, 1)
 DarkEnergy.BackgroundTransparency = 1
 DarkEnergy.BorderColor3 = Color3.new(0, 0, 0)
 DarkEnergy.BorderSizePixel = 0
-DarkEnergy.Position = UDim2.new(0.0265854262, 0, 0.27336359, 0)
+DarkEnergy.Position = UDim2.new(0.0192683525, 0, 0.149727225, 0)
 DarkEnergy.Size = UDim2.new(0, 91, 0, 30)
 DarkEnergy.Font = Enum.Font.SourceSansSemibold
 DarkEnergy.Text = "Dark Energy"
@@ -345,7 +371,7 @@ HealthTitle.BackgroundColor3 = Color3.new(1, 1, 1)
 HealthTitle.BackgroundTransparency = 1
 HealthTitle.BorderColor3 = Color3.new(0, 0, 0)
 HealthTitle.BorderSizePixel = 0
-HealthTitle.Position = UDim2.new(0.255853713, 0, 0.0363636352, 0)
+HealthTitle.Position = UDim2.new(0.248536646, 0, 0.0472727269, 0)
 HealthTitle.Size = UDim2.new(0, 85, 0, 28)
 HealthTitle.Font = Enum.Font.SourceSansBold
 HealthTitle.Text = "Health Bar"
@@ -376,21 +402,163 @@ Line2.Text = ""
 Line2.TextColor3 = Color3.new(0, 0, 0)
 Line2.TextSize = 14
 
-Line2_2.Name = "Line2"
-Line2_2.Parent = Bars
-Line2_2.BackgroundColor3 = Color3.new(1, 1, 1)
-Line2_2.BorderColor3 = Color3.new(0, 0, 0)
-Line2_2.BorderSizePixel = 0
-Line2_2.Position = UDim2.new(0.460731775, 0, 0.00312677561, 0)
-Line2_2.Size = UDim2.new(0, 1, 0, 274)
-Line2_2.Font = Enum.Font.SourceSans
-Line2_2.Text = ""
-Line2_2.TextColor3 = Color3.new(0, 0, 0)
-Line2_2.TextSize = 14
+Line3.Name = "Line3"
+Line3.Parent = Bars
+Line3.BackgroundColor3 = Color3.new(1, 1, 1)
+Line3.BorderColor3 = Color3.new(0, 0, 0)
+Line3.BorderSizePixel = 0
+Line3.Position = UDim2.new(0.460731775, 0, 0.00312677561, 0)
+Line3.Size = UDim2.new(0, 1, 0, 274)
+Line3.Font = Enum.Font.SourceSans
+Line3.Text = ""
+Line3.TextColor3 = Color3.new(0, 0, 0)
+Line3.TextSize = 14
+
+PurpleEnergy.Name = "PurpleEnergy"
+PurpleEnergy.Parent = Bars
+PurpleEnergy.BackgroundColor3 = Color3.new(1, 1, 1)
+PurpleEnergy.BackgroundTransparency = 1
+PurpleEnergy.BorderColor3 = Color3.new(0, 0, 0)
+PurpleEnergy.BorderSizePixel = 0
+PurpleEnergy.Position = UDim2.new(0.0265854262, 0, 0.360636324, 0)
+PurpleEnergy.Size = UDim2.new(0, 91, 0, 30)
+PurpleEnergy.Font = Enum.Font.SourceSansSemibold
+PurpleEnergy.Text = "Purple Energy"
+PurpleEnergy.TextColor3 = Color3.new(1, 1, 1)
+PurpleEnergy.TextSize = 14
+
+GreenLife.Name = "GreenLife"
+GreenLife.Parent = Bars
+GreenLife.BackgroundColor3 = Color3.new(1, 1, 1)
+GreenLife.BackgroundTransparency = 1
+GreenLife.BorderColor3 = Color3.new(0, 0, 0)
+GreenLife.BorderSizePixel = 0
+GreenLife.Position = UDim2.new(0.248536646, 0, 0.469727218, 0)
+GreenLife.Size = UDim2.new(0, 91, 0, 30)
+GreenLife.Font = Enum.Font.SourceSansSemibold
+GreenLife.Text = "Green Life"
+GreenLife.TextColor3 = Color3.new(1, 1, 1)
+GreenLife.TextSize = 14
+
+DarkLife.Name = "DarkLife"
+DarkLife.Parent = Bars
+DarkLife.BackgroundColor3 = Color3.new(1, 1, 1)
+DarkLife.BackgroundTransparency = 1
+DarkLife.BorderColor3 = Color3.new(0, 0, 0)
+DarkLife.BorderSizePixel = 0
+DarkLife.Position = UDim2.new(0.241219565, 0, 0.149727225, 0)
+DarkLife.Size = UDim2.new(0, 91, 0, 30)
+DarkLife.Font = Enum.Font.SourceSansSemibold
+DarkLife.Text = "Dark Life"
+DarkLife.TextColor3 = Color3.new(1, 1, 1)
+DarkLife.TextSize = 14
+
+GreenEnergy.Name = "GreenEnergy"
+GreenEnergy.Parent = Bars
+GreenEnergy.BackgroundColor3 = Color3.new(1, 1, 1)
+GreenEnergy.BackgroundTransparency = 1
+GreenEnergy.BorderColor3 = Color3.new(0, 0, 0)
+GreenEnergy.BorderSizePixel = 0
+GreenEnergy.Position = UDim2.new(0.0192683525, 0, 0.469727218, 0)
+GreenEnergy.Size = UDim2.new(0, 91, 0, 30)
+GreenEnergy.Font = Enum.Font.SourceSansSemibold
+GreenEnergy.Text = "Green Energy"
+GreenEnergy.TextColor3 = Color3.new(1, 1, 1)
+GreenEnergy.TextSize = 14
+
+PurpleLife.Name = "PurpleLife"
+PurpleLife.Parent = Bars
+PurpleLife.BackgroundColor3 = Color3.new(1, 1, 1)
+PurpleLife.BackgroundTransparency = 1
+PurpleLife.BorderColor3 = Color3.new(0, 0, 0)
+PurpleLife.BorderSizePixel = 0
+PurpleLife.Position = UDim2.new(0.248536646, 0, 0.371545404, 0)
+PurpleLife.Size = UDim2.new(0, 91, 0, 30)
+PurpleLife.Font = Enum.Font.SourceSansSemibold
+PurpleLife.Text = "Purple Life"
+PurpleLife.TextColor3 = Color3.new(1, 1, 1)
+PurpleLife.TextSize = 14
+
+ArmorTitle.Name = "ArmorTitle"
+ArmorTitle.Parent = Bars
+ArmorTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+ArmorTitle.BackgroundTransparency = 1
+ArmorTitle.BorderColor3 = Color3.new(0, 0, 0)
+ArmorTitle.BorderSizePixel = 0
+ArmorTitle.Position = UDim2.new(0.470487863, 0, 0.043636363, 0)
+ArmorTitle.Size = UDim2.new(0, 85, 0, 28)
+ArmorTitle.Font = Enum.Font.SourceSansBold
+ArmorTitle.Text = "Armor Bar"
+ArmorTitle.TextColor3 = Color3.new(1, 1, 1)
+ArmorTitle.TextSize = 14
+
+Line4.Name = "Line4"
+Line4.Parent = Bars
+Line4.BackgroundColor3 = Color3.new(1, 1, 1)
+Line4.BorderColor3 = Color3.new(0, 0, 0)
+Line4.BorderSizePixel = 0
+Line4.Position = UDim2.new(0.675365925, 0, 0.00676313927, 0)
+Line4.Size = UDim2.new(0, 1, 0, 274)
+Line4.Font = Enum.Font.SourceSans
+Line4.Text = ""
+Line4.TextColor3 = Color3.new(0, 0, 0)
+Line4.TextSize = 14
+
+DarkArmor.Name = "DarkArmor"
+DarkArmor.Parent = Bars
+DarkArmor.BackgroundColor3 = Color3.new(1, 1, 1)
+DarkArmor.BackgroundTransparency = 1
+DarkArmor.BorderColor3 = Color3.new(0, 0, 0)
+DarkArmor.BorderSizePixel = 0
+DarkArmor.Position = UDim2.new(0.45585373, 0, 0.149727225, 0)
+DarkArmor.Size = UDim2.new(0, 91, 0, 30)
+DarkArmor.Font = Enum.Font.SourceSansSemibold
+DarkArmor.Text = "Dark Armor"
+DarkArmor.TextColor3 = Color3.new(1, 1, 1)
+DarkArmor.TextSize = 14
+
+RedArmor.Name = "RedArmor"
+RedArmor.Parent = Bars
+RedArmor.BackgroundColor3 = Color3.new(1, 1, 1)
+RedArmor.BackgroundTransparency = 1
+RedArmor.BorderColor3 = Color3.new(0, 0, 0)
+RedArmor.BorderSizePixel = 0
+RedArmor.Position = UDim2.new(0.45585373, 0, 0.251545399, 0)
+RedArmor.Size = UDim2.new(0, 91, 0, 30)
+RedArmor.Font = Enum.Font.SourceSansSemibold
+RedArmor.Text = "Red Armor"
+RedArmor.TextColor3 = Color3.new(1, 1, 1)
+RedArmor.TextSize = 14
+
+PurpleArmor.Name = "PurpleArmor"
+PurpleArmor.Parent = Bars
+PurpleArmor.BackgroundColor3 = Color3.new(1, 1, 1)
+PurpleArmor.BackgroundTransparency = 1
+PurpleArmor.BorderColor3 = Color3.new(0, 0, 0)
+PurpleArmor.BorderSizePixel = 0
+PurpleArmor.Position = UDim2.new(0.453414708, 0, 0.371545404, 0)
+PurpleArmor.Size = UDim2.new(0, 91, 0, 30)
+PurpleArmor.Font = Enum.Font.SourceSansSemibold
+PurpleArmor.Text = "Purple Armor"
+PurpleArmor.TextColor3 = Color3.new(1, 1, 1)
+PurpleArmor.TextSize = 14
+
+GreenArmor.Name = "GreenArmor"
+GreenArmor.Parent = Bars
+GreenArmor.BackgroundColor3 = Color3.new(1, 1, 1)
+GreenArmor.BackgroundTransparency = 1
+GreenArmor.BorderColor3 = Color3.new(0, 0, 0)
+GreenArmor.BorderSizePixel = 0
+GreenArmor.Position = UDim2.new(0.453414708, 0, 0.469727218, 0)
+GreenArmor.Size = UDim2.new(0, 91, 0, 30)
+GreenArmor.Font = Enum.Font.SourceSansSemibold
+GreenArmor.Text = "Green Life"
+GreenArmor.TextColor3 = Color3.new(1, 1, 1)
+GreenArmor.TextSize = 14
 
 -- Scripts
 
-local function UTOKYUE_fake_script() -- Galaxy.Drag 
+local function WKKS_fake_script() -- Galaxy.Drag 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local UIS = game:GetService('UserInputService')
@@ -428,8 +596,8 @@ local function UTOKYUE_fake_script() -- Galaxy.Drag
 		end
 	end)
 end
-coroutine.wrap(UTOKYUE_fake_script)()
-local function BZTI_fake_script() -- Galaxy.Toggle 
+coroutine.wrap(WKKS_fake_script)()
+local function ABOSCRO_fake_script() -- Galaxy.Toggle 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local Galaxy = script.Parent
@@ -452,8 +620,8 @@ local function BZTI_fake_script() -- Galaxy.Toggle
 		end
 	end)
 end
-coroutine.wrap(BZTI_fake_script)()
-local function GGWEXAH_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(ABOSCRO_fake_script)()
+local function LKWZUD_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	local Players = game:GetService("Players")
@@ -462,8 +630,8 @@ local function GGWEXAH_fake_script() -- Welcome.LocalScript
 	
 	textLabel.Text = "Welcome " .. player.Name
 end
-coroutine.wrap(GGWEXAH_fake_script)()
-local function BNHZ_fake_script() -- thumbnail.Thumbnail 
+coroutine.wrap(LKWZUD_fake_script)()
+local function HHXD_fake_script() -- thumbnail.Thumbnail 
 	local script = Instance.new('LocalScript', thumbnail)
 
 	local Players = game:GetService("Players")
@@ -479,8 +647,8 @@ local function BNHZ_fake_script() -- thumbnail.Thumbnail
 		thumbnail.Image = content
 	end
 end
-coroutine.wrap(BNHZ_fake_script)()
-local function WPBLU_fake_script() -- stopchargeanim.stopcharge 
+coroutine.wrap(HHXD_fake_script)()
+local function RNDRR_fake_script() -- stopchargeanim.stopcharge 
 	local script = Instance.new('LocalScript', stopchargeanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -497,8 +665,8 @@ local function WPBLU_fake_script() -- stopchargeanim.stopcharge
 		end
 	end)
 end
-coroutine.wrap(WPBLU_fake_script)()
-local function IVUKDD_fake_script() -- stopblockanim.stopblock 
+coroutine.wrap(RNDRR_fake_script)()
+local function IDYIZQ_fake_script() -- stopblockanim.stopblock 
 	local script = Instance.new('LocalScript', stopblockanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -515,8 +683,8 @@ local function IVUKDD_fake_script() -- stopblockanim.stopblock
 		end
 	end)
 end
-coroutine.wrap(IVUKDD_fake_script)()
-local function YXBCORQ_fake_script() -- voidkilltool.tool 
+coroutine.wrap(IDYIZQ_fake_script)()
+local function VKEIIC_fake_script() -- voidkilltool.tool 
 	local script = Instance.new('LocalScript', voidkilltool)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -557,8 +725,8 @@ local function YXBCORQ_fake_script() -- voidkilltool.tool
 		end)
 	end)
 end
-coroutine.wrap(YXBCORQ_fake_script)()
-local function ZNYZ_fake_script() -- fistreach.reach 
+coroutine.wrap(VKEIIC_fake_script)()
+local function EHINACK_fake_script() -- fistreach.reach 
 	local script = Instance.new('LocalScript', fistreach)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -825,35 +993,128 @@ local function ZNYZ_fake_script() -- fistreach.reach
 		
 	end)
 end
-coroutine.wrap(ZNYZ_fake_script)()
-local function LAFUIW_fake_script() -- RedEnergy.RedEnergyBar 
+coroutine.wrap(EHINACK_fake_script)()
+local function FSXIR_fake_script() -- rolltp.rolltp 
+	local script = Instance.new('LocalScript', rolltp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+			if key == "v" then
+				local anim = Instance.new("Animation")
+				anim.AnimationId = "rbxassetid://2791328524"
+				local a = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(anim)
+				a:Play()
+				a:AdjustSpeed()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 50
+			end
+		end)
+	end)
+end
+coroutine.wrap(FSXIR_fake_script)()
+local function JVCSOGO_fake_script() -- RedEnergy.RedEnergyBar 
 	local script = Instance.new('LocalScript', RedEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = "Energy"
-		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.52549, 0, 0.00784314)
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(LAFUIW_fake_script)()
-local function EIKHFMU_fake_script() -- Life.LifeBar 
-	local script = Instance.new('LocalScript', Life)
+coroutine.wrap(JVCSOGO_fake_script)()
+local function DVRO_fake_script() -- RedLife.RedLifeBar 
+	local script = Instance.new('LocalScript', RedLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = "Life"
-		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.694118, 0.0627451, 0.0627451)
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(EIKHFMU_fake_script)()
-local function ZGRZ_fake_script() -- DarkEnergy.DarkEnergyBar 
+coroutine.wrap(DVRO_fake_script)()
+local function QGGVK_fake_script() -- DarkEnergy.DarkEnergyBar 
 	local script = Instance.new('LocalScript', DarkEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.TextLabel.Text = "Dark Energy"
-		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.172549, 0.145098, 0.274510)
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
 	end)
 end
-coroutine.wrap(ZGRZ_fake_script)()
-local function KMUR_fake_script() -- Sections.Toggle 
+coroutine.wrap(QGGVK_fake_script)()
+local function LEBGU_fake_script() -- PurpleEnergy.PurpleEnergyBar 
+	local script = Instance.new('LocalScript', PurpleEnergy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
+	end)
+end
+coroutine.wrap(LEBGU_fake_script)()
+local function NIIYIOC_fake_script() -- GreenLife.GreenLifeBar 
+	local script = Instance.new('LocalScript', GreenLife)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = "Life"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
+	end)
+end
+coroutine.wrap(NIIYIOC_fake_script)()
+local function QADQYTJ_fake_script() -- DarkLife.DarkLifeBar 
+	local script = Instance.new('LocalScript', DarkLife)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = "Life"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
+	end)
+end
+coroutine.wrap(QADQYTJ_fake_script)()
+local function PZBGSF_fake_script() -- GreenEnergy.PurpleEnergyBar 
+	local script = Instance.new('LocalScript', GreenEnergy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
+	end)
+end
+coroutine.wrap(PZBGSF_fake_script)()
+local function DFEHJAP_fake_script() -- PurpleLife.PurpleLifeBar 
+	local script = Instance.new('LocalScript', PurpleLife)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = "Life"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
+	end)
+end
+coroutine.wrap(DFEHJAP_fake_script)()
+local function DVWC_fake_script() -- DarkArmor.DarkArmorBar 
+	local script = Instance.new('LocalScript', DarkArmor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.TextLabel.Text = "Dark Armor"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
+	end)
+end
+coroutine.wrap(DVWC_fake_script)()
+local function RYXWFO_fake_script() -- RedArmor.RedArmorBar 
+	local script = Instance.new('LocalScript', RedArmor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	end)
+end
+coroutine.wrap(RYXWFO_fake_script)()
+local function VVPJCC_fake_script() -- PurpleArmor.PurpleArmorBar 
+	local script = Instance.new('LocalScript', PurpleArmor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
+	end)
+end
+coroutine.wrap(VVPJCC_fake_script)()
+local function IPYTHJ_fake_script() -- GreenArmor.GreenArmorBar 
+	local script = Instance.new('LocalScript', GreenArmor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
+	end)
+end
+coroutine.wrap(IPYTHJ_fake_script)()
+local function BZSCPSO_fake_script() -- Sections.Toggle 
 	local script = Instance.new('LocalScript', Sections)
 
 	local sections = script.Parent
@@ -889,4 +1150,4 @@ local function KMUR_fake_script() -- Sections.Toggle
 	mainFrame.Visible = false
 	barsFrame.Visible = false
 end
-coroutine.wrap(KMUR_fake_script)()
+coroutine.wrap(BZSCPSO_fake_script)()
