@@ -35,7 +35,6 @@ local Line1 = Instance.new("TextLabel")
 local Line2 = Instance.new("TextLabel")
 local Line2_2 = Instance.new("TextLabel")
 
--- Properties
 
 GalaxyGui.Name = "GalaxyGui"
 GalaxyGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -162,7 +161,6 @@ Home.BorderColor3 = Color3.new(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
 Home.Size = UDim2.new(0, 410, 0, 275)
-Home.Visible = false
 
 UICorner_5.Parent = Home
 
@@ -207,6 +205,7 @@ Main.BorderColor3 = Color3.new(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
 Main.Size = UDim2.new(0, 410, 0, 275)
+Main.Visible = false
 
 UICorner_6.Parent = Main
 
@@ -389,7 +388,7 @@ Line2_2.TextSize = 14
 
 -- Scripts
 
-local function TKHKMPH_fake_script() -- Galaxy.Drag 
+local function FGDL_fake_script() -- Galaxy.Drag 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local UIS = game:GetService('UserInputService')
@@ -427,8 +426,8 @@ local function TKHKMPH_fake_script() -- Galaxy.Drag
 		end
 	end)
 end
-coroutine.wrap(TKHKMPH_fake_script)()
-local function NWOJJ_fake_script() -- Galaxy.Toggle 
+coroutine.wrap(FGDL_fake_script)()
+local function LTULN_fake_script() -- Galaxy.Toggle 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(Key)
@@ -438,8 +437,8 @@ local function NWOJJ_fake_script() -- Galaxy.Toggle
 	end)
 	
 end
-coroutine.wrap(NWOJJ_fake_script)()
-local function MLLCWT_fake_script() -- HomeButton.Frame 
+coroutine.wrap(LTULN_fake_script)()
+local function PMXRWJM_fake_script() -- HomeButton.Frame 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -452,8 +451,8 @@ local function MLLCWT_fake_script() -- HomeButton.Frame
 		end
 	end)
 end
-coroutine.wrap(MLLCWT_fake_script)()
-local function RKUIDH_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(PMXRWJM_fake_script)()
+local function TLIZMBU_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	local Players = game:GetService("Players")
@@ -462,8 +461,8 @@ local function RKUIDH_fake_script() -- Welcome.LocalScript
 	
 	textLabel.Text = "Welcome " .. player.Name
 end
-coroutine.wrap(RKUIDH_fake_script)()
-local function HMDWAA_fake_script() -- thumbnail.Thumbnail 
+coroutine.wrap(TLIZMBU_fake_script)()
+local function UORS_fake_script() -- thumbnail.Thumbnail 
 	local script = Instance.new('LocalScript', thumbnail)
 
 	local Players = game:GetService("Players")
@@ -479,8 +478,8 @@ local function HMDWAA_fake_script() -- thumbnail.Thumbnail
 		thumbnail.Image = content
 	end
 end
-coroutine.wrap(HMDWAA_fake_script)()
-local function FSFZ_fake_script() -- MainButton.Frame 
+coroutine.wrap(UORS_fake_script)()
+local function VTKY_fake_script() -- MainButton.Frame 
 	local script = Instance.new('LocalScript', MainButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -493,8 +492,8 @@ local function FSFZ_fake_script() -- MainButton.Frame
 		end
 	end)
 end
-coroutine.wrap(FSFZ_fake_script)()
-local function MPUK_fake_script() -- stopchargeanim.stopcharge 
+coroutine.wrap(VTKY_fake_script)()
+local function DOWDLW_fake_script() -- stopchargeanim.stopcharge 
 	local script = Instance.new('LocalScript', stopchargeanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -511,8 +510,8 @@ local function MPUK_fake_script() -- stopchargeanim.stopcharge
 		end
 	end)
 end
-coroutine.wrap(MPUK_fake_script)()
-local function MXSHBCY_fake_script() -- stopblockanim.stopblock 
+coroutine.wrap(DOWDLW_fake_script)()
+local function CRQW_fake_script() -- stopblockanim.stopblock 
 	local script = Instance.new('LocalScript', stopblockanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -529,8 +528,8 @@ local function MXSHBCY_fake_script() -- stopblockanim.stopblock
 		end
 	end)
 end
-coroutine.wrap(MXSHBCY_fake_script)()
-local function XUPR_fake_script() -- voidkilltool.tool 
+coroutine.wrap(CRQW_fake_script)()
+local function QSOCVB_fake_script() -- voidkilltool.tool 
 	local script = Instance.new('LocalScript', voidkilltool)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -571,8 +570,8 @@ local function XUPR_fake_script() -- voidkilltool.tool
 		end)
 	end)
 end
-coroutine.wrap(XUPR_fake_script)()
-local function ADAVL_fake_script() -- fistreach.reach 
+coroutine.wrap(QSOCVB_fake_script)()
+local function RJZPM_fake_script() -- fistreach.reach 
 	local script = Instance.new('LocalScript', fistreach)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -839,8 +838,8 @@ local function ADAVL_fake_script() -- fistreach.reach
 		
 	end)
 end
-coroutine.wrap(ADAVL_fake_script)()
-local function XQIY_fake_script() -- BarsButton.LocalScript 
+coroutine.wrap(RJZPM_fake_script)()
+local function GVWCP_fake_script() -- BarsButton.LocalScript 
 	local script = Instance.new('LocalScript', BarsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -853,8 +852,8 @@ local function XQIY_fake_script() -- BarsButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XQIY_fake_script)()
-local function NRPLV_fake_script() -- RedEnergy.RedEnergyBar 
+coroutine.wrap(GVWCP_fake_script)()
+local function LPHFR_fake_script() -- RedEnergy.RedEnergyBar 
 	local script = Instance.new('LocalScript', RedEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -862,8 +861,8 @@ local function NRPLV_fake_script() -- RedEnergy.RedEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.52549, 0, 0.00784314)
 	end)
 end
-coroutine.wrap(NRPLV_fake_script)()
-local function PJXRNB_fake_script() -- Life.LifeBar 
+coroutine.wrap(LPHFR_fake_script)()
+local function HGOGAEL_fake_script() -- Life.LifeBar 
 	local script = Instance.new('LocalScript', Life)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -871,8 +870,8 @@ local function PJXRNB_fake_script() -- Life.LifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.694118, 0.0627451, 0.0627451)
 	end)
 end
-coroutine.wrap(PJXRNB_fake_script)()
-local function GCGKF_fake_script() -- DarkEnergy.DarkEnergyBar 
+coroutine.wrap(HGOGAEL_fake_script)()
+local function NIOOJ_fake_script() -- DarkEnergy.DarkEnergyBar 
 	local script = Instance.new('LocalScript', DarkEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -880,4 +879,4 @@ local function GCGKF_fake_script() -- DarkEnergy.DarkEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.172549, 0.145098, 0.274510)
 	end)
 end
-coroutine.wrap(GCGKF_fake_script)()
+coroutine.wrap(NIOOJ_fake_script)()
