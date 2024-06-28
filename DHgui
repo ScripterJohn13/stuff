@@ -62,6 +62,7 @@ local Welcome = Instance.new("TextLabel")
 local thumbnail = Instance.new("ImageLabel")
 local Executor = Instance.new("TextLabel")
 
+-- Properties
 
 GalaxyGui.Name = "GalaxyGui"
 GalaxyGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -728,7 +729,7 @@ Executor.TextSize = 17
 
 -- Scripts
 
-local function NQZWEGF_fake_script() -- Galaxy.Drag 
+local function JQEVVKC_fake_script() -- Galaxy.Drag 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local UIS = game:GetService('UserInputService')
@@ -766,8 +767,8 @@ local function NQZWEGF_fake_script() -- Galaxy.Drag
 		end
 	end)
 end
-coroutine.wrap(NQZWEGF_fake_script)()
-local function SPNPUIH_fake_script() -- Galaxy.Toggle 
+coroutine.wrap(JQEVVKC_fake_script)()
+local function TOTSAS_fake_script() -- Galaxy.Toggle 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local Galaxy = script.Parent
@@ -790,8 +791,8 @@ local function SPNPUIH_fake_script() -- Galaxy.Toggle
 		end
 	end)
 end
-coroutine.wrap(SPNPUIH_fake_script)()
-local function UDUY_fake_script() -- PookiePreset.pookiepreset 
+coroutine.wrap(TOTSAS_fake_script)()
+local function LNII_fake_script() -- PookiePreset.pookiepreset 
 	local script = Instance.new('LocalScript', PookiePreset)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -808,8 +809,8 @@ local function UDUY_fake_script() -- PookiePreset.pookiepreset
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/goldpue/STANDGUI/main/Lib'))()
 	end)
 end
-coroutine.wrap(UDUY_fake_script)()
-local function VZVSA_fake_script() -- stopchargeanim.stopcharge 
+coroutine.wrap(LNII_fake_script)()
+local function SJPPSU_fake_script() -- stopchargeanim.stopcharge 
 	local script = Instance.new('LocalScript', stopchargeanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -826,8 +827,8 @@ local function VZVSA_fake_script() -- stopchargeanim.stopcharge
 		end
 	end)
 end
-coroutine.wrap(VZVSA_fake_script)()
-local function RMODFI_fake_script() -- stopblockanim.stopblock 
+coroutine.wrap(SJPPSU_fake_script)()
+local function ADBVE_fake_script() -- stopblockanim.stopblock 
 	local script = Instance.new('LocalScript', stopblockanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -844,8 +845,8 @@ local function RMODFI_fake_script() -- stopblockanim.stopblock
 		end
 	end)
 end
-coroutine.wrap(RMODFI_fake_script)()
-local function KPNECF_fake_script() -- voidkilltool.tool 
+coroutine.wrap(ADBVE_fake_script)()
+local function EDKEUU_fake_script() -- voidkilltool.tool 
 	local script = Instance.new('LocalScript', voidkilltool)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -886,16 +887,16 @@ local function KPNECF_fake_script() -- voidkilltool.tool
 		end)
 	end)
 end
-coroutine.wrap(KPNECF_fake_script)()
-local function HGBJSY_fake_script() -- tbo.tbo 
+coroutine.wrap(EDKEUU_fake_script)()
+local function UHUTMH_fake_script() -- tbo.tbo 
 	local script = Instance.new('LocalScript', tbo)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
 	end)
 end
-coroutine.wrap(HGBJSY_fake_script)()
-local function YWSD_fake_script() -- rolltp.rolltp 
+coroutine.wrap(UHUTMH_fake_script)()
+local function BAVUOQC_fake_script() -- rolltp.rolltp 
 	local script = Instance.new('LocalScript', rolltp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -911,8 +912,8 @@ local function YWSD_fake_script() -- rolltp.rolltp
 		end)
 	end)
 end
-coroutine.wrap(YWSD_fake_script)()
-local function ECAHQJ_fake_script() -- solodevtools.tools 
+coroutine.wrap(BAVUOQC_fake_script)()
+local function QOYYU_fake_script() -- solodevtools.tools 
 	local script = Instance.new('LocalScript', solodevtools)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -925,8 +926,8 @@ local function ECAHQJ_fake_script() -- solodevtools.tools
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/skbiditoiletrizz327/sigmar/main/%F0%9F%90%B1%E2%80%8D%F0%9F%91%A4%F0%9F%98%9C%F0%9F%93%B8%F0%9F%98%86"))()
 	end)
 end
-coroutine.wrap(ECAHQJ_fake_script)()
-local function TKMRTWG_fake_script() -- chatspy.chatspy 
+coroutine.wrap(QOYYU_fake_script)()
+local function IQSQA_fake_script() -- chatspy.chatspy 
 	local script = Instance.new('LocalScript', chatspy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -991,16 +992,16 @@ local function TKMRTWG_fake_script() -- chatspy.chatspy
 		chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
 	end)
 end
-coroutine.wrap(TKMRTWG_fake_script)()
-local function ITBVDSI_fake_script() -- infyield.infyield 
+coroutine.wrap(IQSQA_fake_script)()
+local function NSUNIRL_fake_script() -- infyield.infyield 
 	local script = Instance.new('LocalScript', infyield)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(ITBVDSI_fake_script)()
-local function WHVDGN_fake_script() -- RedEnergy.RedEnergyBar 
+coroutine.wrap(NSUNIRL_fake_script)()
+local function KKSDCW_fake_script() -- RedEnergy.RedEnergyBar 
 	local script = Instance.new('LocalScript', RedEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1008,8 +1009,8 @@ local function WHVDGN_fake_script() -- RedEnergy.RedEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(WHVDGN_fake_script)()
-local function ECAW_fake_script() -- RedLife.RedLifeBar 
+coroutine.wrap(KKSDCW_fake_script)()
+local function YVDD_fake_script() -- RedLife.RedLifeBar 
 	local script = Instance.new('LocalScript', RedLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1017,8 +1018,8 @@ local function ECAW_fake_script() -- RedLife.RedLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(ECAW_fake_script)()
-local function WBCP_fake_script() -- DarkEnergy.DarkEnergyBar 
+coroutine.wrap(YVDD_fake_script)()
+local function UIQC_fake_script() -- DarkEnergy.DarkEnergyBar 
 	local script = Instance.new('LocalScript', DarkEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1026,16 +1027,16 @@ local function WBCP_fake_script() -- DarkEnergy.DarkEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
 	end)
 end
-coroutine.wrap(WBCP_fake_script)()
-local function ZHCQA_fake_script() -- PurpleEnergy.PurpleEnergyBar 
+coroutine.wrap(UIQC_fake_script)()
+local function NBXQC_fake_script() -- PurpleEnergy.PurpleEnergyBar 
 	local script = Instance.new('LocalScript', PurpleEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
 	end)
 end
-coroutine.wrap(ZHCQA_fake_script)()
-local function RSGMBQ_fake_script() -- GreenLife.GreenLifeBar 
+coroutine.wrap(NBXQC_fake_script)()
+local function GHBV_fake_script() -- GreenLife.GreenLifeBar 
 	local script = Instance.new('LocalScript', GreenLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1043,8 +1044,8 @@ local function RSGMBQ_fake_script() -- GreenLife.GreenLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
 	end)
 end
-coroutine.wrap(RSGMBQ_fake_script)()
-local function HHAE_fake_script() -- DarkLife.DarkLifeBar 
+coroutine.wrap(GHBV_fake_script)()
+local function WJOSQJU_fake_script() -- DarkLife.DarkLifeBar 
 	local script = Instance.new('LocalScript', DarkLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1052,16 +1053,16 @@ local function HHAE_fake_script() -- DarkLife.DarkLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
 	end)
 end
-coroutine.wrap(HHAE_fake_script)()
-local function UPVG_fake_script() -- GreenEnergy.PurpleEnergyBar 
+coroutine.wrap(WJOSQJU_fake_script)()
+local function IQVJT_fake_script() -- GreenEnergy.PurpleEnergyBar 
 	local script = Instance.new('LocalScript', GreenEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
 	end)
 end
-coroutine.wrap(UPVG_fake_script)()
-local function IDGJZ_fake_script() -- PurpleLife.PurpleLifeBar 
+coroutine.wrap(IQVJT_fake_script)()
+local function BVXJVA_fake_script() -- PurpleLife.PurpleLifeBar 
 	local script = Instance.new('LocalScript', PurpleLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1069,8 +1070,8 @@ local function IDGJZ_fake_script() -- PurpleLife.PurpleLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
 	end)
 end
-coroutine.wrap(IDGJZ_fake_script)()
-local function HPBEKO_fake_script() -- DarkArmor.DarkArmorBar 
+coroutine.wrap(BVXJVA_fake_script)()
+local function CSOP_fake_script() -- DarkArmor.DarkArmorBar 
 	local script = Instance.new('LocalScript', DarkArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1078,32 +1079,32 @@ local function HPBEKO_fake_script() -- DarkArmor.DarkArmorBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
 	end)
 end
-coroutine.wrap(HPBEKO_fake_script)()
-local function UXBFI_fake_script() -- RedArmor.RedArmorBar 
+coroutine.wrap(CSOP_fake_script)()
+local function BFFWG_fake_script() -- RedArmor.RedArmorBar 
 	local script = Instance.new('LocalScript', RedArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(UXBFI_fake_script)()
-local function GHTBQZ_fake_script() -- PurpleArmor.PurpleArmorBar 
+coroutine.wrap(BFFWG_fake_script)()
+local function HPGONWA_fake_script() -- PurpleArmor.PurpleArmorBar 
 	local script = Instance.new('LocalScript', PurpleArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
 	end)
 end
-coroutine.wrap(GHTBQZ_fake_script)()
-local function PCPE_fake_script() -- GreenArmor.GreenArmorBar 
+coroutine.wrap(HPGONWA_fake_script)()
+local function ICJHT_fake_script() -- GreenArmor.GreenArmorBar 
 	local script = Instance.new('LocalScript', GreenArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
 	end)
 end
-coroutine.wrap(PCPE_fake_script)()
-local function HBBEECJ_fake_script() -- WhiteLife.whitelifebar 
+coroutine.wrap(ICJHT_fake_script)()
+local function TMVNK_fake_script() -- WhiteLife.whitelifebar 
 	local script = Instance.new('LocalScript', WhiteLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1111,24 +1112,24 @@ local function HBBEECJ_fake_script() -- WhiteLife.whitelifebar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(255,255,255)
 	end)
 end
-coroutine.wrap(HBBEECJ_fake_script)()
-local function QEYOIRZ_fake_script() -- WhiteEnergy.whiteenergybar 
+coroutine.wrap(TMVNK_fake_script)()
+local function SGFPX_fake_script() -- WhiteEnergy.whiteenergybar 
 	local script = Instance.new('LocalScript', WhiteEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(255,255,255)
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(255,255,255)
 	end)
 end
-coroutine.wrap(QEYOIRZ_fake_script)()
-local function FDVOK_fake_script() -- WhiteArmor.whitearmorbar 
+coroutine.wrap(SGFPX_fake_script)()
+local function JPAVL_fake_script() -- WhiteArmor.whitearmorbar 
 	local script = Instance.new('LocalScript', WhiteArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(255,255,255)
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(255,255,255)
 	end)
 end
-coroutine.wrap(FDVOK_fake_script)()
-local function KPBBT_fake_script() -- Sections.Toggle 
+coroutine.wrap(JPAVL_fake_script)()
+local function WTDSY_fake_script() -- Sections.Toggle 
 	local script = Instance.new('LocalScript', Sections)
 
 	local sections = script.Parent
@@ -1164,7 +1165,7 @@ local function KPBBT_fake_script() -- Sections.Toggle
 	end)
 	
 	presetsButton.MouseButton1Click:Connect(function()
-		setVisible(barsFrame)
+		setVisible(presetsFrame)
 	end)
 	
 	homeFrame.Visible = true
@@ -1172,8 +1173,8 @@ local function KPBBT_fake_script() -- Sections.Toggle
 	barsFrame.Visible = false
 	presetsFrame.Visible = false
 end
-coroutine.wrap(KPBBT_fake_script)()
-local function PCUTZ_fake_script() -- Welcome.LocalScript 
+coroutine.wrap(WTDSY_fake_script)()
+local function OREEHQ_fake_script() -- Welcome.LocalScript 
 	local script = Instance.new('LocalScript', Welcome)
 
 	local Players = game:GetService("Players")
@@ -1182,8 +1183,8 @@ local function PCUTZ_fake_script() -- Welcome.LocalScript
 	
 	textLabel.Text = "Welcome " .. player.Name
 end
-coroutine.wrap(PCUTZ_fake_script)()
-local function XINDQ_fake_script() -- thumbnail.Thumbnail 
+coroutine.wrap(OREEHQ_fake_script)()
+local function VKGZDRV_fake_script() -- thumbnail.Thumbnail 
 	local script = Instance.new('LocalScript', thumbnail)
 
 	local Players = game:GetService("Players")
@@ -1199,18 +1200,18 @@ local function XINDQ_fake_script() -- thumbnail.Thumbnail
 		thumbnail.Image = content
 	end
 end
-coroutine.wrap(XINDQ_fake_script)()
-local function AKBRWUM_fake_script() -- Executor.detectexecutor 
+coroutine.wrap(VKGZDRV_fake_script)()
+local function IMXEXT_fake_script() -- Executor.detectexecutor 
 	local script = Instance.new('LocalScript', Executor)
 
 	local executor
 	
 	local function isSolara()
-		return typeof(identifyexecutor) == "function" and identifyexecutor() == "Solara"
+		return typeof(identifyexecutor) == "function" and identifyexecutor()() == "Solara"
 	end
 	
 	local function isWave()
-		return typeof(identifyexecutor) == "function" and identifyexecutor() == "Wave"
+		return typeof(identifyexecutor) == "function" and identifyexecutor()() == "Wave"
 	end
 	
 	if isSolara() then
@@ -1223,4 +1224,4 @@ local function AKBRWUM_fake_script() -- Executor.detectexecutor
 	
 	game.StarterGui.GalaxyGui.Galaxy.Sections.Home.Executor.Text = "Executor: " .. executor
 end
-coroutine.wrap(AKBRWUM_fake_script)()
+coroutine.wrap(IMXEXT_fake_script)()
