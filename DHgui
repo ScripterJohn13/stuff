@@ -12,20 +12,22 @@ local Title_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
 local Line = Instance.new("TextLabel")
 local HomeButton = Instance.new("TextButton")
-local Star1 = Instance.new("TextLabel")
+local Star3 = Instance.new("TextLabel")
 local Star2 = Instance.new("TextLabel")
-local Home = Instance.new("Frame")
+local Presets = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local Welcome = Instance.new("TextLabel")
-local thumbnail = Instance.new("ImageLabel")
+local PookiePreset = Instance.new("TextButton")
 local MainButton = Instance.new("TextButton")
 local Main = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
 local stopchargeanim = Instance.new("TextButton")
 local stopblockanim = Instance.new("TextButton")
 local voidkilltool = Instance.new("TextButton")
-local fistreach = Instance.new("TextButton")
+local tbo = Instance.new("TextButton")
 local rolltp = Instance.new("TextButton")
+local solodevtools = Instance.new("TextButton")
+local chatspy = Instance.new("TextButton")
+local infyield = Instance.new("TextButton")
 local BarsButton = Instance.new("TextButton")
 local Bars = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
@@ -48,6 +50,18 @@ local DarkArmor = Instance.new("TextButton")
 local RedArmor = Instance.new("TextButton")
 local PurpleArmor = Instance.new("TextButton")
 local GreenArmor = Instance.new("TextButton")
+local WhiteLife = Instance.new("TextButton")
+local WhiteEnergy = Instance.new("TextButton")
+local WhiteArmor = Instance.new("TextButton")
+local PresetsButton = Instance.new("TextButton")
+local Star4 = Instance.new("TextLabel")
+local Star1 = Instance.new("TextLabel")
+local Home = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Welcome = Instance.new("TextLabel")
+local thumbnail = Instance.new("ImageLabel")
+local Executor = Instance.new("TextLabel")
+
 
 GalaxyGui.Name = "GalaxyGui"
 GalaxyGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -74,7 +88,7 @@ Title.Position = UDim2.new(-5.09808267e-08, 0, 0, 0)
 Title.Size = UDim2.new(0, 630, 0, 37)
 Title.Font = Enum.Font.SourceSansSemibold
 Title.LineHeight = 0
-Title.Text = "                Galaxy Gui | v1"
+Title.Text = "                Galaxy Gui | v2"
 Title.TextColor3 = Color3.new(0.917647, 0.917647, 0.917647)
 Title.TextSize = 17
 Title.TextXAlignment = Enum.TextXAlignment.Left
@@ -141,19 +155,19 @@ HomeButton.Text = "Home"
 HomeButton.TextColor3 = Color3.new(1, 1, 0)
 HomeButton.TextSize = 16
 
-Star1.Name = "Star1"
-Star1.Parent = Sections
-Star1.BackgroundColor3 = Color3.new(1, 1, 1)
-Star1.BackgroundTransparency = 1
-Star1.BorderColor3 = Color3.new(0, 0, 0)
-Star1.BorderSizePixel = 0
-Star1.Position = UDim2.new(0.227544904, 0, 0.0981818214, 0)
-Star1.Size = UDim2.new(0, 18, 0, 24)
-Star1.Font = Enum.Font.SourceSans
-Star1.Text = "⭐"
-Star1.TextColor3 = Color3.new(0, 0, 0)
-Star1.TextSize = 14
-Star1.TextXAlignment = Enum.TextXAlignment.Left
+Star3.Name = "Star3"
+Star3.Parent = Sections
+Star3.BackgroundColor3 = Color3.new(1, 1, 1)
+Star3.BackgroundTransparency = 1
+Star3.BorderColor3 = Color3.new(0, 0, 0)
+Star3.BorderSizePixel = 0
+Star3.Position = UDim2.new(0.227544904, 0, 0.356363624, 0)
+Star3.Size = UDim2.new(0, 18, 0, 24)
+Star3.Font = Enum.Font.SourceSans
+Star3.Text = "⭐"
+Star3.TextColor3 = Color3.new(0, 0, 0)
+Star3.TextSize = 14
+Star3.TextXAlignment = Enum.TextXAlignment.Left
 
 Star2.Name = "Star2"
 Star2.Parent = Sections
@@ -169,36 +183,29 @@ Star2.TextColor3 = Color3.new(0, 0, 0)
 Star2.TextSize = 14
 Star2.TextXAlignment = Enum.TextXAlignment.Right
 
-Home.Name = "Home"
-Home.Parent = Sections
-Home.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
-Home.BorderColor3 = Color3.new(0, 0, 0)
-Home.BorderSizePixel = 0
-Home.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
-Home.Size = UDim2.new(0, 410, 0, 275)
+Presets.Name = "Presets"
+Presets.Parent = Sections
+Presets.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Presets.BorderColor3 = Color3.new(0, 0, 0)
+Presets.BorderSizePixel = 0
+Presets.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
+Presets.Size = UDim2.new(0, 410, 0, 275)
+Presets.Visible = false
 
-UICorner_5.Parent = Home
+UICorner_5.Parent = Presets
 
-Welcome.Name = "Welcome"
-Welcome.Parent = Home
-Welcome.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
-Welcome.BorderColor3 = Color3.new(0, 0, 0)
-Welcome.BorderSizePixel = 0
-Welcome.Position = UDim2.new(0.319512188, 0, 0.0472727269, 0)
-Welcome.Size = UDim2.new(0, 124, 0, 26)
-Welcome.Font = Enum.Font.SourceSansSemibold
-Welcome.Text = "Welcome "
-Welcome.TextColor3 = Color3.new(1, 1, 1)
-Welcome.TextSize = 21
-
-thumbnail.Name = "thumbnail"
-thumbnail.Parent = Home
-thumbnail.BackgroundColor3 = Color3.new(1, 1, 1)
-thumbnail.BorderColor3 = Color3.new(0, 0, 0)
-thumbnail.BorderSizePixel = 0
-thumbnail.Position = UDim2.new(0.348780483, 0, 0.185454547, 0)
-thumbnail.Size = UDim2.new(0, 100, 0, 100)
-thumbnail.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+PookiePreset.Name = "PookiePreset"
+PookiePreset.Parent = Presets
+PookiePreset.BackgroundColor3 = Color3.new(1, 1, 1)
+PookiePreset.BackgroundTransparency = 1
+PookiePreset.BorderColor3 = Color3.new(0, 0, 0)
+PookiePreset.BorderSizePixel = 0
+PookiePreset.Position = UDim2.new(0.0390243903, 0, 0.0509090908, 0)
+PookiePreset.Size = UDim2.new(0, 78, 0, 23)
+PookiePreset.Font = Enum.Font.SourceSansSemibold
+PookiePreset.Text = "Pookie Preset"
+PookiePreset.TextColor3 = Color3.new(1, 1, 1)
+PookiePreset.TextSize = 14
 
 MainButton.Name = "MainButton"
 MainButton.Parent = Sections
@@ -263,18 +270,18 @@ voidkilltool.Text = "Void Kill Tool"
 voidkilltool.TextColor3 = Color3.new(1, 1, 1)
 voidkilltool.TextSize = 14
 
-fistreach.Name = "fistreach"
-fistreach.Parent = Main
-fistreach.BackgroundColor3 = Color3.new(1, 1, 1)
-fistreach.BackgroundTransparency = 1
-fistreach.BorderColor3 = Color3.new(0, 0, 0)
-fistreach.BorderSizePixel = 0
-fistreach.Position = UDim2.new(0.704878032, 0, 0.0509090908, 0)
-fistreach.Size = UDim2.new(0, 91, 0, 30)
-fistreach.Font = Enum.Font.SourceSansSemibold
-fistreach.Text = "Fist Reach"
-fistreach.TextColor3 = Color3.new(1, 1, 1)
-fistreach.TextSize = 14
+tbo.Name = "tbo"
+tbo.Parent = Main
+tbo.BackgroundColor3 = Color3.new(1, 1, 1)
+tbo.BackgroundTransparency = 1
+tbo.BorderColor3 = Color3.new(0, 0, 0)
+tbo.BorderSizePixel = 0
+tbo.Position = UDim2.new(0.704878032, 0, 0.0509090908, 0)
+tbo.Size = UDim2.new(0, 91, 0, 30)
+tbo.Font = Enum.Font.SourceSansSemibold
+tbo.Text = "TBO"
+tbo.TextColor3 = Color3.new(1, 1, 1)
+tbo.TextSize = 14
 
 rolltp.Name = "rolltp"
 rolltp.Parent = Main
@@ -288,6 +295,45 @@ rolltp.Font = Enum.Font.SourceSansSemibold
 rolltp.Text = "Roll TP"
 rolltp.TextColor3 = Color3.new(1, 1, 1)
 rolltp.TextSize = 14
+
+solodevtools.Name = "solodevtools"
+solodevtools.Parent = Main
+solodevtools.BackgroundColor3 = Color3.new(1, 1, 1)
+solodevtools.BackgroundTransparency = 1
+solodevtools.BorderColor3 = Color3.new(0, 0, 0)
+solodevtools.BorderSizePixel = 0
+solodevtools.Position = UDim2.new(0.260975599, 0, 0.174545452, 0)
+solodevtools.Size = UDim2.new(0, 91, 0, 30)
+solodevtools.Font = Enum.Font.SourceSansSemibold
+solodevtools.Text = "SoloDev Tools"
+solodevtools.TextColor3 = Color3.new(1, 1, 1)
+solodevtools.TextSize = 14
+
+chatspy.Name = "chatspy"
+chatspy.Parent = Main
+chatspy.BackgroundColor3 = Color3.new(1, 1, 1)
+chatspy.BackgroundTransparency = 1
+chatspy.BorderColor3 = Color3.new(0, 0, 0)
+chatspy.BorderSizePixel = 0
+chatspy.Position = UDim2.new(0.482926816, 0, 0.174545452, 0)
+chatspy.Size = UDim2.new(0, 91, 0, 30)
+chatspy.Font = Enum.Font.SourceSansSemibold
+chatspy.Text = "Chat Spy"
+chatspy.TextColor3 = Color3.new(1, 1, 1)
+chatspy.TextSize = 14
+
+infyield.Name = "infyield"
+infyield.Parent = Main
+infyield.BackgroundColor3 = Color3.new(1, 1, 1)
+infyield.BackgroundTransparency = 1
+infyield.BorderColor3 = Color3.new(0, 0, 0)
+infyield.BorderSizePixel = 0
+infyield.Position = UDim2.new(0.704878032, 0, 0.174545452, 0)
+infyield.Size = UDim2.new(0, 91, 0, 30)
+infyield.Font = Enum.Font.SourceSansSemibold
+infyield.Text = "Inf Yield"
+infyield.TextColor3 = Color3.new(1, 1, 1)
+infyield.TextSize = 14
 
 BarsButton.Name = "BarsButton"
 BarsButton.Parent = Sections
@@ -552,19 +598,143 @@ GreenArmor.BorderSizePixel = 0
 GreenArmor.Position = UDim2.new(0.453414708, 0, 0.469727218, 0)
 GreenArmor.Size = UDim2.new(0, 91, 0, 30)
 GreenArmor.Font = Enum.Font.SourceSansSemibold
-GreenArmor.Text = "Green Life"
+GreenArmor.Text = "Green Armor"
 GreenArmor.TextColor3 = Color3.new(1, 1, 1)
 GreenArmor.TextSize = 14
 
+WhiteLife.Name = "WhiteLife"
+WhiteLife.Parent = Bars
+WhiteLife.BackgroundColor3 = Color3.new(1, 1, 1)
+WhiteLife.BackgroundTransparency = 1
+WhiteLife.BorderColor3 = Color3.new(0, 0, 0)
+WhiteLife.BorderSizePixel = 0
+WhiteLife.Position = UDim2.new(0.248536646, 0, 0.578818142, 0)
+WhiteLife.Size = UDim2.new(0, 91, 0, 30)
+WhiteLife.Font = Enum.Font.SourceSansSemibold
+WhiteLife.Text = "White Life"
+WhiteLife.TextColor3 = Color3.new(1, 1, 1)
+WhiteLife.TextSize = 14
+
+WhiteEnergy.Name = "WhiteEnergy"
+WhiteEnergy.Parent = Bars
+WhiteEnergy.BackgroundColor3 = Color3.new(1, 1, 1)
+WhiteEnergy.BackgroundTransparency = 1
+WhiteEnergy.BorderColor3 = Color3.new(0, 0, 0)
+WhiteEnergy.BorderSizePixel = 0
+WhiteEnergy.Position = UDim2.new(0.0119512789, 0, 0.578818142, 0)
+WhiteEnergy.Size = UDim2.new(0, 91, 0, 30)
+WhiteEnergy.Font = Enum.Font.SourceSansSemibold
+WhiteEnergy.Text = "White Energy"
+WhiteEnergy.TextColor3 = Color3.new(1, 1, 1)
+WhiteEnergy.TextSize = 14
+
+WhiteArmor.Name = "WhiteArmor"
+WhiteArmor.Parent = Bars
+WhiteArmor.BackgroundColor3 = Color3.new(1, 1, 1)
+WhiteArmor.BackgroundTransparency = 1
+WhiteArmor.BorderColor3 = Color3.new(0, 0, 0)
+WhiteArmor.BorderSizePixel = 0
+WhiteArmor.Position = UDim2.new(0.463170797, 0, 0.578818142, 0)
+WhiteArmor.Size = UDim2.new(0, 91, 0, 30)
+WhiteArmor.Font = Enum.Font.SourceSansSemibold
+WhiteArmor.Text = "White Armor"
+WhiteArmor.TextColor3 = Color3.new(1, 1, 1)
+WhiteArmor.TextSize = 14
+
+PresetsButton.Name = "PresetsButton"
+PresetsButton.Parent = Sections
+PresetsButton.BackgroundColor3 = Color3.new(1, 1, 1)
+PresetsButton.BackgroundTransparency = 1
+PresetsButton.BorderColor3 = Color3.new(0, 0, 0)
+PresetsButton.BorderSizePixel = 0
+PresetsButton.Position = UDim2.new(0.377245516, 0, 0.360000014, 0)
+PresetsButton.Size = UDim2.new(0, 40, 0, 24)
+PresetsButton.Font = Enum.Font.SourceSansSemibold
+PresetsButton.Text = "Presets"
+PresetsButton.TextColor3 = Color3.new(1, 1, 0)
+PresetsButton.TextSize = 16
+
+Star4.Name = "Star4"
+Star4.Parent = Sections
+Star4.BackgroundColor3 = Color3.new(1, 1, 1)
+Star4.BackgroundTransparency = 1
+Star4.BorderColor3 = Color3.new(0, 0, 0)
+Star4.BorderSizePixel = 0
+Star4.Position = UDim2.new(0.664671004, 0, 0.360000014, 0)
+Star4.Size = UDim2.new(0, 17, 0, 23)
+Star4.Font = Enum.Font.SourceSans
+Star4.Text = "⭐"
+Star4.TextColor3 = Color3.new(0, 0, 0)
+Star4.TextSize = 14
+Star4.TextXAlignment = Enum.TextXAlignment.Right
+
+Star1.Name = "Star1"
+Star1.Parent = Sections
+Star1.BackgroundColor3 = Color3.new(1, 1, 1)
+Star1.BackgroundTransparency = 1
+Star1.BorderColor3 = Color3.new(0, 0, 0)
+Star1.BorderSizePixel = 0
+Star1.Position = UDim2.new(0.227544904, 0, 0.0981818214, 0)
+Star1.Size = UDim2.new(0, 18, 0, 24)
+Star1.Font = Enum.Font.SourceSans
+Star1.Text = "⭐"
+Star1.TextColor3 = Color3.new(0, 0, 0)
+Star1.TextSize = 14
+Star1.TextXAlignment = Enum.TextXAlignment.Left
+
+Home.Name = "Home"
+Home.Parent = Sections
+Home.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Home.BorderColor3 = Color3.new(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(1.08950198, 0, -0.00312677561, 0)
+Home.Size = UDim2.new(0, 410, 0, 275)
+
+UICorner_8.Parent = Home
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Home
+Welcome.BackgroundColor3 = Color3.new(0.352941, 0, 0.0117647)
+Welcome.BorderColor3 = Color3.new(0, 0, 0)
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.319512188, 0, 0.0472727269, 0)
+Welcome.Size = UDim2.new(0, 124, 0, 26)
+Welcome.Font = Enum.Font.SourceSansSemibold
+Welcome.Text = "Welcome "
+Welcome.TextColor3 = Color3.new(1, 1, 1)
+Welcome.TextSize = 21
+
+thumbnail.Name = "thumbnail"
+thumbnail.Parent = Home
+thumbnail.BackgroundColor3 = Color3.new(1, 1, 1)
+thumbnail.BorderColor3 = Color3.new(0, 0, 0)
+thumbnail.BorderSizePixel = 0
+thumbnail.Position = UDim2.new(0.348780483, 0, 0.185454547, 0)
+thumbnail.Size = UDim2.new(0, 100, 0, 100)
+thumbnail.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Executor.Name = "Executor"
+Executor.Parent = Home
+Executor.BackgroundColor3 = Color3.new(1, 1, 1)
+Executor.BackgroundTransparency = 1
+Executor.BorderColor3 = Color3.new(0, 0, 0)
+Executor.BorderSizePixel = 0
+Executor.Position = UDim2.new(0.226829275, 0, 0.636363626, 0)
+Executor.Size = UDim2.new(0, 200, 0, 26)
+Executor.Font = Enum.Font.SourceSansBold
+Executor.Text = "Executor: "
+Executor.TextColor3 = Color3.new(1, 1, 1)
+Executor.TextSize = 17
+
 -- Scripts
 
-local function WKKS_fake_script() -- Galaxy.Drag 
+local function NQZWEGF_fake_script() -- Galaxy.Drag 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
-	local dragSpeed = 0.50
+	local dragSpeed = 0.75
 	local dragStart = nil
 	local startPos = nil
 	
@@ -596,8 +766,8 @@ local function WKKS_fake_script() -- Galaxy.Drag
 		end
 	end)
 end
-coroutine.wrap(WKKS_fake_script)()
-local function ABOSCRO_fake_script() -- Galaxy.Toggle 
+coroutine.wrap(NQZWEGF_fake_script)()
+local function SPNPUIH_fake_script() -- Galaxy.Toggle 
 	local script = Instance.new('LocalScript', Galaxy)
 
 	local Galaxy = script.Parent
@@ -620,35 +790,26 @@ local function ABOSCRO_fake_script() -- Galaxy.Toggle
 		end
 	end)
 end
-coroutine.wrap(ABOSCRO_fake_script)()
-local function LKWZUD_fake_script() -- Welcome.LocalScript 
-	local script = Instance.new('LocalScript', Welcome)
+coroutine.wrap(SPNPUIH_fake_script)()
+local function UDUY_fake_script() -- PookiePreset.pookiepreset 
+	local script = Instance.new('LocalScript', PookiePreset)
 
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local textLabel = script.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		getgenv().Settings = {
+			["sigma"] = "This is a free script, if you paid for it you got scammed lol, https://discord.gg/gDuYQ4DhaR",
+			["Effects"] = true, -- portal etc (CLIENTSIDED!)
+			["AutoGetTools After Death"] = true 
+		}
 	
-	textLabel.Text = "Welcome " .. player.Name
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/skbiditoiletrizz327/sigmar/main/%F0%9F%90%B1%E2%80%8D%F0%9F%91%A4%F0%9F%98%9C%F0%9F%93%B8%F0%9F%98%86"))()
+		wait(1.5)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+		wait(1.5)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/goldpue/STANDGUI/main/Lib'))()
+	end)
 end
-coroutine.wrap(LKWZUD_fake_script)()
-local function HHXD_fake_script() -- thumbnail.Thumbnail 
-	local script = Instance.new('LocalScript', thumbnail)
-
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local thumbnail = script.Parent
-	
-	local userId = player.UserId
-	local thumbType = Enum.ThumbnailType.HeadShot
-	local thumbSize = Enum.ThumbnailSize.Size420x420
-	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-	
-	if isReady then
-		thumbnail.Image = content
-	end
-end
-coroutine.wrap(HHXD_fake_script)()
-local function RNDRR_fake_script() -- stopchargeanim.stopcharge 
+coroutine.wrap(UDUY_fake_script)()
+local function VZVSA_fake_script() -- stopchargeanim.stopcharge 
 	local script = Instance.new('LocalScript', stopchargeanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -665,8 +826,8 @@ local function RNDRR_fake_script() -- stopchargeanim.stopcharge
 		end
 	end)
 end
-coroutine.wrap(RNDRR_fake_script)()
-local function IDYIZQ_fake_script() -- stopblockanim.stopblock 
+coroutine.wrap(VZVSA_fake_script)()
+local function RMODFI_fake_script() -- stopblockanim.stopblock 
 	local script = Instance.new('LocalScript', stopblockanim)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -683,8 +844,8 @@ local function IDYIZQ_fake_script() -- stopblockanim.stopblock
 		end
 	end)
 end
-coroutine.wrap(IDYIZQ_fake_script)()
-local function VKEIIC_fake_script() -- voidkilltool.tool 
+coroutine.wrap(RMODFI_fake_script)()
+local function KPNECF_fake_script() -- voidkilltool.tool 
 	local script = Instance.new('LocalScript', voidkilltool)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -725,276 +886,16 @@ local function VKEIIC_fake_script() -- voidkilltool.tool
 		end)
 	end)
 end
-coroutine.wrap(VKEIIC_fake_script)()
-local function EHINACK_fake_script() -- fistreach.reach 
-	local script = Instance.new('LocalScript', fistreach)
+coroutine.wrap(KPNECF_fake_script)()
+local function HGBJSY_fake_script() -- tbo.tbo 
+	local script = Instance.new('LocalScript', tbo)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "Info";
-			Text = "Use the second Combat Tool that gets added to your Inventory.";
-			Duration = "5";
-		})
-		
-		local LocalPlayer = game:GetService("Players").LocalPlayer
-		local ToolClone;
-		local Size = 30
-		local LeftHand_Save = LocalPlayer.Character.LeftHand.Size
-		local RightHand_Save = LocalPlayer.Character.RightHand.Size
-	
-		local ANIM_TRACK = Instance.new("Animation")
-		ANIM_TRACK.AnimationId = "rbxassetid://2788290941"
-		local FakePunch = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(ANIM_TRACK)
-		FakePunch.Priority = Enum.AnimationPriority.Action
-	
-		-- Remove seats
-		for i, v in pairs(game.workspace.MAP:GetDescendants()) do 
-			if v.ClassName == "Seat" and v.Disabled ~= true then 
-				v.Disabled = true
-			end
-		end
-	
-	
-		function FireRemote(NAME, STATE)
-			game:GetService("ReplicatedStorage"):WaitForChild("MainEvent"):FireServer(NAME, STATE)
-		end
-	
-		function RemoveMovement()
-			for i = 1,15 do
-				for i, v in pairs(LocalPlayer.Character:WaitForChild("BodyEffects"):FindFirstChild("Movement"):GetChildren()) do
-					v:Destroy()
-				end
-				task.wait()
-			end
-		end
-	
-		function RefreshAnimations()
-			LocalPlayer.Character.Animate.Disabled = true
-			for _, v in ipairs(LocalPlayer.Character:WaitForChild("Humanoid"):GetPlayingAnimationTracks()) do
-				v:Stop()
-			end
-			LocalPlayer.Character.Animate.Disabled = false
-			task.wait()
-		end
-	
-		function MouseIcon(STATE)
-			if STATE then
-				game:GetService("UserInputService").MouseIconEnabled = true
-			else
-				LocalPlayer.PlayerGui.MainScreenGui.AmmoFrame.Visible = false
-				game:GetService("UserInputService").MouseIconEnabled = false
-				LocalPlayer.PlayerGui.MainScreenGui.Aim.Bottom.BackgroundTransparency = 1
-				LocalPlayer.PlayerGui.MainScreenGui.Aim.Left.BackgroundTransparency = 1
-				LocalPlayer.PlayerGui.MainScreenGui.Aim.Right.BackgroundTransparency = 1
-				LocalPlayer.PlayerGui.MainScreenGui.Aim.Top.BackgroundTransparency = 1
-				LocalPlayer.PlayerGui.MainScreenGui.Aim.CursorImage.ImageTransparency = 1
-				LocalPlayer.PlayerGui.MainScreenGui.Aim.BackgroundTransparency = 1
-			end
-		end
-	
-		function HandReach(STATE)
-			if STATE then
-				LocalPlayer.Character.RightHand.Size = Vector3.new(Size, Size, Size)
-				LocalPlayer.Character.LeftHand.Size = Vector3.new(Size, Size, Size)
-				LocalPlayer.Character.RightHand.Transparency = 1
-				LocalPlayer.Character.LeftHand.Transparency = 1
-				LocalPlayer.Character.RightHand.Massless = true
-				LocalPlayer.Character.LeftHand.Massless = true
-			else
-				LocalPlayer.Character.RightHand.Size = Vector3.new(RightHand_Save)
-				LocalPlayer.Character.LeftHand.Size = Vector3.new(LeftHand_Save)
-				LocalPlayer.Character.RightHand.Transparency = 0
-				LocalPlayer.Character.LeftHand.Transparency = 0
-				LocalPlayer.Character.RightHand.Massless = false
-				LocalPlayer.Character.LeftHand.Massless = false
-			end
-		end
-	
-		function BuyTool()
-			warn("NO GUN FOUND BUYING GUN")
-			local GlockSpot = workspace.Ignored.Shop:FindFirstChild('[Glock] - $318')
-			repeat
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = GlockSpot:GetPivot() * CFrame.new(0,-5,0)
-				fireclickdetector(GlockSpot.ClickDetector)
-				game:GetService('RunService').Stepped:Wait()
-			until game.Players.LocalPlayer.Backpack:FindFirstChild('[Glock]')
-		end
-	
-		BuyTool()
-	
-		if LocalPlayer.Character:FindFirstChild("Reach") then LocalPlayer.Character:FindFirstChild("Reach"):Destroy() end
-		if LocalPlayer.Backpack:FindFirstChild("Reach") then LocalPlayer.Backpack:FindFirstChild("Reach"):Destroy() end
-		local Tool = Instance.new("Tool", LocalPlayer.Backpack)
-		Tool.Name = "Reach"
-		Tool.CanBeDropped = false
-		Tool.RequiresHandle = false
-		Tool.TextureId = "rbxassetid://854037206" --16274800774
-		game.Players.LocalPlayer.CharacterAdded:Connect(function()
-			if not game.Players.LocalPlayer.Backpack:FindFirstChild('Reach') then
-				wait(1)
-				ToolClone = Tool:Clone()
-				ToolClone.Parent = game.Players.LocalPlayer.Backpack
-	
-				local Attacking = false
-				local RemovingValues = false
-				ToolClone.Activated:Connect(function()
-					if not Attacking then
-						Attacking = true
-						local q=0
-						for i, v in pairs(LocalPlayer.Backpack:GetChildren()) do
-							if v:IsA("Tool") and q==0 then
-								if v:FindFirstChild("Ammo") then
-									q=q+1
-	
-									local Tool = v
-									local Humanoid = LocalPlayer.Character:WaitForChild("Humanoid")
-	
-									Humanoid:UnequipTools();
-	
-									if Tool then
-										MouseIcon(false);
-										for i = 1,20 do
-											FireRemote("GunCombatToggle", true);
-										end
-							--[[repeat task.wait()
-								FireRemote("GunCombatToggle", true);
-							until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("MousePos"):FindFirstChild("HandAttk").Value == true]]
-	
-										Humanoid:EquipTool(Tool);
-										Tool:Activate();
-										RemoveMovement();
-	
-										--repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == true
-										Humanoid:UnequipTools();
-										MouseIcon(true);
-	
-										FakePunch:Play(.5);
-										FakePunch:AdjustSpeed(0);
-										FakePunch.TimePosition = 0.4
-	
-										LocalPlayer.Character:WaitForChild("Highlight");
-	
-										LocalPlayer.Character:WaitForChild("Humanoid"):EquipTool(Tool);
-	
-										HandReach(true);
-										MouseIcon(false);
-										Tool:Activate();
-										task.wait()
-										Tool:Deactivate();
-										LocalPlayer:GetMouse()
-										Humanoid:UnequipTools();
-										MouseIcon(true);
-										RemoveMovement();
-	
-										FakePunch:AdjustSpeed(1.5);
-	
-										for i = 1,15 do
-											for i, v in pairs(Humanoid:GetPlayingAnimationTracks()) do
-												if v.Animation.AnimationId:match("rbxassetid://2791876661") then
-													v:Stop();
-												end
-											end
-											task.wait()
-										end
-	
-										repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == false
-	
-										HandReach(false);
-									end
-	
-									Attacking = false
-								end
-							end
-						end
-						if q == 0 then
-							BuyTool();
-						end
-					end
-				end)
-			end
-		end)
-	
-		local Attacking = false
-		local RemovingValues = false
-		Tool.Activated:Connect(function()
-			if not Attacking then
-				Attacking = true
-				local q=0
-				for i, v in pairs(LocalPlayer.Backpack:GetChildren()) do
-					if v:IsA("Tool") and q==0 then
-						if v:FindFirstChild("Ammo") then
-							q=q+1
-	
-							local Tool = v
-							local Humanoid = LocalPlayer.Character:WaitForChild("Humanoid")
-	
-							Humanoid:UnequipTools();
-	
-							if Tool then
-								MouseIcon(false);
-								for i = 1,20 do
-									FireRemote("GunCombatToggle", true);
-								end
-							--[[repeat task.wait()
-								FireRemote("GunCombatToggle", true);
-							until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("MousePos"):FindFirstChild("HandAttk").Value == true]]
-	
-								Humanoid:EquipTool(Tool);
-								Tool:Activate();
-								RemoveMovement();
-	
-								--repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == true
-								Humanoid:UnequipTools();
-								MouseIcon(true);
-	
-								FakePunch:Play(.5);
-								FakePunch:AdjustSpeed(0);
-								FakePunch.TimePosition = 0.4
-	
-								LocalPlayer.Character:WaitForChild("Highlight");
-	
-								LocalPlayer.Character:WaitForChild("Humanoid"):EquipTool(Tool);
-	
-								HandReach(true);
-								MouseIcon(false);
-								Tool:Activate();
-								task.wait()
-								Tool:Deactivate();
-								LocalPlayer:GetMouse()
-								Humanoid:UnequipTools();
-								MouseIcon(true);
-								RemoveMovement();
-	
-								FakePunch:AdjustSpeed(1.5);
-	
-								for i = 1,15 do
-									for i, v in pairs(Humanoid:GetPlayingAnimationTracks()) do
-										if v.Animation.AnimationId:match("rbxassetid://2791876661") then
-											v:Stop();
-										end
-									end
-									task.wait()
-								end
-	
-								repeat task.wait() until LocalPlayer.Character:FindFirstChild("BodyEffects"):FindFirstChild("Attacking").Value == false
-	
-								HandReach(false);
-							end
-	
-							Attacking = false
-						end
-					end
-				end
-				if q == 0 then
-					BuyTool();
-				end
-			end
-		end)
-		
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
 	end)
 end
-coroutine.wrap(EHINACK_fake_script)()
-local function FSXIR_fake_script() -- rolltp.rolltp 
+coroutine.wrap(HGBJSY_fake_script)()
+local function YWSD_fake_script() -- rolltp.rolltp 
 	local script = Instance.new('LocalScript', rolltp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1010,8 +911,96 @@ local function FSXIR_fake_script() -- rolltp.rolltp
 		end)
 	end)
 end
-coroutine.wrap(FSXIR_fake_script)()
-local function JVCSOGO_fake_script() -- RedEnergy.RedEnergyBar 
+coroutine.wrap(YWSD_fake_script)()
+local function ECAHQJ_fake_script() -- solodevtools.tools 
+	local script = Instance.new('LocalScript', solodevtools)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		getgenv().Settings = {
+			["sigma"] = "This is a free script, if you paid for it you got scammed lol, https://discord.gg/gDuYQ4DhaR",
+			["Effects"] = true, -- portal etc (CLIENTSIDED!)
+			["AutoGetTools After Death"] = true 
+		}
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/skbiditoiletrizz327/sigmar/main/%F0%9F%90%B1%E2%80%8D%F0%9F%91%A4%F0%9F%98%9C%F0%9F%93%B8%F0%9F%98%86"))()
+	end)
+end
+coroutine.wrap(ECAHQJ_fake_script)()
+local function TKMRTWG_fake_script() -- chatspy.chatspy 
+	local script = Instance.new('LocalScript', chatspy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		enabled = true --chat "/spy" to toggle!
+		spyOnMyself = true --if true will check your messages too
+		public = false --if true will chat the logs publicly (fun, risky)
+		publicItalics = true --if true will use /me to stand out
+		privateProperties = { --customize private logs
+			Color = Color3.fromRGB(0,255,255); 
+			Font = Enum.Font.SourceSansBold;
+			TextSize = 18;
+		}
+	
+		local StarterGui = game:GetService("StarterGui")
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
+		local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+		local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+		local instance = (_G.chatSpyInstance or 0) + 1
+		_G.chatSpyInstance = instance
+	
+		local function onChatted(p,msg)
+			if _G.chatSpyInstance == instance then
+				if p==player and msg:lower():sub(1,4)=="/spy" then
+					enabled = not enabled
+					wait(0.3)
+					privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				elseif enabled and (spyOnMyself==true or p~=player) then
+					msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+					local hidden = true
+					local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+						if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+							hidden = false
+						end
+					end)
+					wait(1)
+					conn:Disconnect()
+					if hidden and enabled then
+						if public then
+							saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+						else
+							privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+							StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+						end
+					end
+				end
+			end
+		end
+	
+		for _,p in ipairs(Players:GetPlayers()) do
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end
+		Players.PlayerAdded:Connect(function(p)
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end)
+		privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+		StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+		if not player.PlayerGui:FindFirstChild("Chat") then wait(3) end
+		local chatFrame = player.PlayerGui.Chat.Frame
+		chatFrame.ChatChannelParentFrame.Visible = true
+		chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+	end)
+end
+coroutine.wrap(TKMRTWG_fake_script)()
+local function ITBVDSI_fake_script() -- infyield.infyield 
+	local script = Instance.new('LocalScript', infyield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(ITBVDSI_fake_script)()
+local function WHVDGN_fake_script() -- RedEnergy.RedEnergyBar 
 	local script = Instance.new('LocalScript', RedEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1019,8 +1008,8 @@ local function JVCSOGO_fake_script() -- RedEnergy.RedEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(JVCSOGO_fake_script)()
-local function DVRO_fake_script() -- RedLife.RedLifeBar 
+coroutine.wrap(WHVDGN_fake_script)()
+local function ECAW_fake_script() -- RedLife.RedLifeBar 
 	local script = Instance.new('LocalScript', RedLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1028,8 +1017,8 @@ local function DVRO_fake_script() -- RedLife.RedLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(DVRO_fake_script)()
-local function QGGVK_fake_script() -- DarkEnergy.DarkEnergyBar 
+coroutine.wrap(ECAW_fake_script)()
+local function WBCP_fake_script() -- DarkEnergy.DarkEnergyBar 
 	local script = Instance.new('LocalScript', DarkEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1037,16 +1026,16 @@ local function QGGVK_fake_script() -- DarkEnergy.DarkEnergyBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
 	end)
 end
-coroutine.wrap(QGGVK_fake_script)()
-local function LEBGU_fake_script() -- PurpleEnergy.PurpleEnergyBar 
+coroutine.wrap(WBCP_fake_script)()
+local function ZHCQA_fake_script() -- PurpleEnergy.PurpleEnergyBar 
 	local script = Instance.new('LocalScript', PurpleEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
 	end)
 end
-coroutine.wrap(LEBGU_fake_script)()
-local function NIIYIOC_fake_script() -- GreenLife.GreenLifeBar 
+coroutine.wrap(ZHCQA_fake_script)()
+local function RSGMBQ_fake_script() -- GreenLife.GreenLifeBar 
 	local script = Instance.new('LocalScript', GreenLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1054,8 +1043,8 @@ local function NIIYIOC_fake_script() -- GreenLife.GreenLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
 	end)
 end
-coroutine.wrap(NIIYIOC_fake_script)()
-local function QADQYTJ_fake_script() -- DarkLife.DarkLifeBar 
+coroutine.wrap(RSGMBQ_fake_script)()
+local function HHAE_fake_script() -- DarkLife.DarkLifeBar 
 	local script = Instance.new('LocalScript', DarkLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1063,16 +1052,16 @@ local function QADQYTJ_fake_script() -- DarkLife.DarkLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
 	end)
 end
-coroutine.wrap(QADQYTJ_fake_script)()
-local function PZBGSF_fake_script() -- GreenEnergy.PurpleEnergyBar 
+coroutine.wrap(HHAE_fake_script)()
+local function UPVG_fake_script() -- GreenEnergy.PurpleEnergyBar 
 	local script = Instance.new('LocalScript', GreenEnergy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Energy.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
 	end)
 end
-coroutine.wrap(PZBGSF_fake_script)()
-local function DFEHJAP_fake_script() -- PurpleLife.PurpleLifeBar 
+coroutine.wrap(UPVG_fake_script)()
+local function IDGJZ_fake_script() -- PurpleLife.PurpleLifeBar 
 	local script = Instance.new('LocalScript', PurpleLife)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1080,8 +1069,8 @@ local function DFEHJAP_fake_script() -- PurpleLife.PurpleLifeBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
 	end)
 end
-coroutine.wrap(DFEHJAP_fake_script)()
-local function DVWC_fake_script() -- DarkArmor.DarkArmorBar 
+coroutine.wrap(IDGJZ_fake_script)()
+local function HPBEKO_fake_script() -- DarkArmor.DarkArmorBar 
 	local script = Instance.new('LocalScript', DarkArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1089,47 +1078,75 @@ local function DVWC_fake_script() -- DarkArmor.DarkArmorBar
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0.188235, 0.160784, 0.301961)
 	end)
 end
-coroutine.wrap(DVWC_fake_script)()
-local function RYXWFO_fake_script() -- RedArmor.RedArmorBar 
+coroutine.wrap(HPBEKO_fake_script)()
+local function UXBFI_fake_script() -- RedArmor.RedArmorBar 
 	local script = Instance.new('LocalScript', RedArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
 	end)
 end
-coroutine.wrap(RYXWFO_fake_script)()
-local function VVPJCC_fake_script() -- PurpleArmor.PurpleArmorBar 
+coroutine.wrap(UXBFI_fake_script)()
+local function GHTBQZ_fake_script() -- PurpleArmor.PurpleArmorBar 
 	local script = Instance.new('LocalScript', PurpleArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0.580392, 0.290196, 0.870588)
 	end)
 end
-coroutine.wrap(VVPJCC_fake_script)()
-local function IPYTHJ_fake_script() -- GreenArmor.GreenArmorBar 
+coroutine.wrap(GHTBQZ_fake_script)()
+local function PCPE_fake_script() -- GreenArmor.GreenArmorBar 
 	local script = Instance.new('LocalScript', GreenArmor)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.Armor.bar.BackgroundColor3 = Color3.new(0, 1, 0.2)
 	end)
 end
-coroutine.wrap(IPYTHJ_fake_script)()
-local function BZSCPSO_fake_script() -- Sections.Toggle 
+coroutine.wrap(PCPE_fake_script)()
+local function HBBEECJ_fake_script() -- WhiteLife.whitelifebar 
+	local script = Instance.new('LocalScript', WhiteLife)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.TextLabel.Text = "Life"
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(255,255,255)
+	end)
+end
+coroutine.wrap(HBBEECJ_fake_script)()
+local function QEYOIRZ_fake_script() -- WhiteEnergy.whiteenergybar 
+	local script = Instance.new('LocalScript', WhiteEnergy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(255,255,255)
+	end)
+end
+coroutine.wrap(QEYOIRZ_fake_script)()
+local function FDVOK_fake_script() -- WhiteArmor.whitearmorbar 
+	local script = Instance.new('LocalScript', WhiteArmor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.MainScreenGui.Bar.HP.bar.BackgroundColor3 = Color3.new(255,255,255)
+	end)
+end
+coroutine.wrap(FDVOK_fake_script)()
+local function KPBBT_fake_script() -- Sections.Toggle 
 	local script = Instance.new('LocalScript', Sections)
 
 	local sections = script.Parent
 	local homeFrame = sections:WaitForChild("Home")
 	local mainFrame = sections:WaitForChild("Main")
 	local barsFrame = sections:WaitForChild("Bars")
+	local presetsFrame = sections:WaitForChild("Presets")
 	
 	local homeButton = sections:WaitForChild("HomeButton")
 	local mainButton = sections:WaitForChild("MainButton")
 	local barsButton = sections:WaitForChild("BarsButton")
+	local presetsButton = sections:WaitForChild("PresetsButton")
 	
 	local function setVisible(frameToShow)
 		homeFrame.Visible = false
 		mainFrame.Visible = false
 		barsFrame.Visible = false
+		presetsFrame.Visible = false
 	
 		frameToShow.Visible = true
 	end
@@ -1146,8 +1163,64 @@ local function BZSCPSO_fake_script() -- Sections.Toggle
 		setVisible(barsFrame)
 	end)
 	
+	presetsButton.MouseButton1Click:Connect(function()
+		setVisible(barsFrame)
+	end)
+	
 	homeFrame.Visible = true
 	mainFrame.Visible = false
 	barsFrame.Visible = false
+	presetsFrame.Visible = false
 end
-coroutine.wrap(BZSCPSO_fake_script)()
+coroutine.wrap(KPBBT_fake_script)()
+local function PCUTZ_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local textLabel = script.Parent
+	
+	textLabel.Text = "Welcome " .. player.Name
+end
+coroutine.wrap(PCUTZ_fake_script)()
+local function XINDQ_fake_script() -- thumbnail.Thumbnail 
+	local script = Instance.new('LocalScript', thumbnail)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local thumbnail = script.Parent
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	if isReady then
+		thumbnail.Image = content
+	end
+end
+coroutine.wrap(XINDQ_fake_script)()
+local function AKBRWUM_fake_script() -- Executor.detectexecutor 
+	local script = Instance.new('LocalScript', Executor)
+
+	local executor
+	
+	local function isSolara()
+		return typeof(identifyexecutor) == "function" and identifyexecutor() == "Solara"
+	end
+	
+	local function isWave()
+		return typeof(identifyexecutor) == "function" and identifyexecutor() == "Wave"
+	end
+	
+	if isSolara() then
+		executor = "Solara"
+	elseif isWave() then
+		executor = "Wave"
+	else
+		executor = "Unknown Executor"
+	end
+	
+	game.StarterGui.GalaxyGui.Galaxy.Sections.Home.Executor.Text = "Executor: " .. executor
+end
+coroutine.wrap(AKBRWUM_fake_script)()
