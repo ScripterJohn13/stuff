@@ -1,1 +1,3 @@
-
+local whitelist = {
+    "drlh7"
+}
