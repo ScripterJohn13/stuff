@@ -1,3 +1,3 @@
 local WhitelistedUsers = {
-    "drlh7" = true,
+    ["drlh7"] = true,
 }
