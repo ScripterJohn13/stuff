@@ -1,4 +1,4 @@
-local WhitelistedUsers = {
-    ["drlh7"] = true,
-    ["MinionCarl"] = true,
+return {
+    "8ontbryuef6m4cyz7iml",
+    "minioncarl"
 }
